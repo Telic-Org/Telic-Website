@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Telic automates high-volume business workflows that combine repeatable work with changing information, decisions, and exceptions.">
   <title>Telic — Automation for real-world business workflows</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -37,27 +37,25 @@
           <h1>Complete more work with less manual effort.</h1>
           <p class="lede">Telic automates high-volume workflows that follow a familiar process—but still involve changing information, messy documents, decisions, and exceptions.</p>
           <div class="hero-actions"><a class="button button-coral" href="contact.html#demo">Book a demo <span>↗</span></a><a class="button button-ghost" href="how-it-works.html">See how Telic works</a></div>
-          <div class="hero-note"><i></i>Best suited to mostly repeatable, operational work—not open-ended knowledge work.</div>
+          <div class="hero-note"><i></i>Best suited to mostly repeatable, operational work.</div>
         </div>
-        <div class="hero-machine" aria-label="Telic executing a purchase order workflow">
-          <div class="machine-glow"></div>
-          <div class="machine-window">
-            <div class="window-bar"><span class="window-title">Workflow operations</span><span class="window-live">RUNNING</span></div>
-            <div class="machine-content">
-              <aside class="machine-side"><small>WORKSPACE</small><div class="machine-nav active"><i></i>Active work</div><div class="machine-nav"><i></i>Workflows</div><div class="machine-nav"><i></i>Review</div><div class="machine-nav"><i></i>History</div></aside>
-              <div class="machine-main">
-                <div class="machine-heading"><div><small>Purchase order · Run 0284</small><strong>Northstar Supplies</strong></div><span class="health-pill">On track</span></div>
-                <div class="mini-steps">
-                  <div class="mini-step done"><span class="mini-icon">✓</span><span><strong>Receive and read order</strong><small>Required information captured</small></span><span class="mini-tag">COMPLETE</span></div>
-                  <div class="mini-step done"><span class="mini-icon">✓</span><span><strong>Enter customer details</strong><small>Proven path reused</small></span><span class="mini-tag">REUSED</span></div>
-                  <div class="mini-step active"><span class="mini-icon">✦</span><span><strong>Resolve product mismatch</strong><small>Comparing the available records</small></span><span class="mini-tag">AI DECISION</span></div>
-                  <div class="mini-step"><span class="mini-icon">4</span><span><strong>Verify and submit</strong><small>Waiting for current decision</small></span><span class="mini-tag">NEXT</span></div>
-                </div>
-              </div>
+        <div class="hero-runtime" aria-label="Telic directing a purchase order workflow inside a business application">
+          <div class="runtime-explainer"><span>LIVE WORKFLOW</span><strong>Telic directs the work inside the application</strong></div>
+          <div class="runtime-split">
+            <div class="business-app">
+              <div class="visual-label"><i></i>BUSINESS APPLICATION</div>
+              <div class="app-chrome"><span>Operations Suite</span><span>— □ ×</span></div>
+              <div class="app-layout"><aside><b>OS</b><span>Orders</span><span>Customers</span><span>Inventory</span><span>Reports</span></aside><div class="app-workspace"><div class="app-title"><div><small>ORDER ENTRY</small><strong>New purchase order</strong></div><span>Draft</span></div><div class="app-fields"><label>Customer<b>Northstar Supplies</b></label><label>Reference<b>PO-73918</b></label><label class="wide active-field">Product<b>Valve assembly · pack 25</b><em>Current action</em></label><label>Quantity<b>4</b></label><label>Delivery<b>Warehouse B</b></label></div><div class="app-table"><span>ITEM</span><span>QTY</span><span>STATUS</span><b>Valve assembly</b><b>4</b><b>Matched</b></div></div></div>
+            </div>
+            <div class="control-link"><span>→</span><small>DIRECTS<br>AND CHECKS</small></div>
+            <div class="telic-control">
+              <div class="visual-label"><i></i>TELIC CONTROL</div>
+              <div class="control-head"><div><small>ORDER ENTRY · RUN 0284</small><strong>Executing the defined workflow</strong></div><span>LIVE</span></div>
+              <div class="control-flow"><div class="control-step complete"><i>✓</i><span><b>Read incoming order</b><small>Input understood</small></span></div><div class="flow-line done"></div><div class="control-step complete"><i>✓</i><span><b>Open customer record</b><small>Verified path reused</small></span></div><div class="flow-line running"></div><div class="control-step current"><i>3</i><span><b>Enter product</b><small>Acting in Operations Suite</small></span></div><div class="flow-line"></div><div class="control-step"><i>4</i><span><b>Verify and submit</b><small>Next</small></span></div></div>
+              <div class="control-status"><span class="status-eye">◎</span><div><small>OBSERVING APPLICATION</small><strong>Product field is ready</strong></div></div>
             </div>
           </div>
-          <div class="machine-float one"><strong>Proven path reused</strong><small>Less processing needed this time</small></div>
-          <div class="machine-float two"><strong>One decision needs AI</strong><small>The rest remains on the known path</small></div>
+          <p class="visual-caption">Telic follows the workflow, performs each action in the software your team already uses, and checks the result before continuing.</p>
         </div>
       </div>
     </section>
@@ -66,37 +64,11 @@
       <div class="shell">
         <div class="section-heading"><div><div class="eyebrow">What Telic does</div><h2>Routine when it can be. Thoughtful when it needs to be.</h2></div><p class="section-copy">Telic carries out recurring work across the software your teams already use. Familiar steps become faster and more efficient over time. When information is unclear or something unexpected appears, Telic focuses intelligence on that moment—or asks a person.</p></div>
         <div class="execution-layout">
-          <div class="execution-stage" data-state="reuse">
-            <div class="sequence-head">
-              <div><span class="sequence-kicker">LIVE PRODUCT SEQUENCE</span><strong class="sequence-title">Reusing a verified path</strong></div>
-              <span class="autoplay-label"><i></i> AUTOPLAY</span>
-            </div>
-            <div class="sequence-nav" aria-label="Execution sequence">
-              <button class="sequence-step active" type="button" data-sequence="0"><span>01</span> Reuse</button>
-              <button class="sequence-step" type="button" data-sequence="1"><span>02</span> Decide</button>
-              <button class="sequence-step" type="button" data-sequence="2"><span>03</span> Detect</button>
-              <button class="sequence-step" type="button" data-sequence="3"><span>04</span> Recover</button>
-              <button class="sequence-step" type="button" data-sequence="4"><span>05</span> Verify</button>
-            </div>
-            <div class="execution-shell">
-              <div class="execution-bar"><strong>Live execution · Order entry</strong><div class="execution-controls"><span>RECORDING</span><span>RUN 0284</span></div></div>
-              <div class="execution-body">
-                <div class="task-screen">
-                  <div class="task-appbar"><strong>ACME Order Management</strong><small>New order</small></div>
-                  <div class="order-form"><div class="field-row"><div class="field"><label>CUSTOMER</label><span>Northstar Supplies</span></div><div class="field"><label>ORDER DATE</label><span>22 Jun 2026</span></div></div><div class="field-row"><div class="field focus"><label>PRODUCT</label><span>Valve assembly · pack 25</span></div><div class="field"><label>QUANTITY</label><span>4</span></div></div><div class="field"><label>DELIVERY NOTE</label><span>Standard delivery · Warehouse B</span></div><div class="submit-row"><span class="fake-submit">Submit order</span></div></div>
-                  <div class="decision-card"><span>AI DECISION</span><strong>Match “Valve assembly · pack 25”</strong><p>Comparing description, pack size, and vendor record.</p><div class="decision-meter"><i></i></div></div>
-                  <div class="exception-dialog"><span class="dialog-icon">!</span><strong>Product record has changed</strong><p>The saved item is no longer available. Two similar records were found.</p><div class="dialog-actions"><span>Stop</span><span>Review options</span></div></div>
-                  <div class="recovery-banner"><span>↻</span><div><strong>Exception resolved</strong><small>Correct record found. Resuming at the interrupted step.</small></div></div>
-                  <div class="verified-toast"><span>✓</span><div><strong>Order created and verified</strong><small>Record AC-20841 · Workflow complete</small></div></div>
-                </div>
-                <aside class="runtime-panel"><div class="runtime-label"><span>TELIC ACTIVITY</span><span>LIVE</span></div><div class="runtime-list">
-                  <div class="runtime-event"><span class="event-type">REUSED PATH</span><strong>Customer and order fields completed</strong><small>Using a previously verified way of completing these steps.</small></div>
-                  <div class="runtime-event model"><span class="event-type">AI DECISION</span><strong>Comparing two product matches</strong><small>Reasoning is limited to this uncertain step.</small></div>
-                  <div class="runtime-event exception"><span class="event-type">EXCEPTION</span><strong>Unexpected record-change dialog detected</strong><small>Normal execution paused before taking another action.</small></div>
-                  <div class="runtime-event model"><span class="event-type">RECOVERED</span><strong>Correct record selected and path resumed</strong><small>The workflow continues from the interrupted step.</small></div>
-                  <div class="runtime-event verify"><span class="event-type">VERIFIED</span><strong>Order created successfully</strong><small>Final state checked before completion.</small></div>
-                </div><button class="replay-button" type="button">Replay the sequence</button></aside>
-              </div>
+          <div class="rpa-comparison" aria-label="Comparison of brittle RPA and Telic handling the same application change">
+            <div class="comparison-head"><span>SAME WORKFLOW</span><strong>The product screen changes unexpectedly</strong></div>
+            <div class="comparison-lanes">
+              <article class="comparison-lane rpa-lane"><div class="lane-title"><span>TRADITIONAL RPA</span><strong>Fixed path breaks</strong></div><div class="lane-app"><div class="lane-appbar">Operations Suite <span>Product search</span></div><div class="screen-change"><span>NEW</span><strong>Choose a product variant</strong><small>An extra selection screen appeared.</small></div></div><div class="path-stack"><div class="path-node done"><i>✓</i><span>Open order</span></div><div class="path-connector"></div><div class="path-node failed"><i>×</i><span>Click saved selector</span><b>ELEMENT NOT FOUND</b></div><div class="path-connector muted"></div><div class="path-node muted"><i>3</i><span>Submit order</span></div></div><div class="lane-outcome failed"><i>!</i><span><b>Workflow stopped</b><small>Rule or selector must be rebuilt.</small></span></div></article>
+              <article class="comparison-lane telic-lane"><div class="lane-title"><span>TELIC</span><strong>Understands, resolves, continues</strong></div><div class="lane-app"><div class="lane-appbar">Operations Suite <span>Product search</span></div><div class="screen-change resolved"><span>RESOLVED</span><strong>Valve assembly · pack 25</strong><small>Matched using order and product context.</small></div></div><div class="path-stack"><div class="path-node done"><i>✓</i><span>Reuse known actions</span></div><div class="path-connector done"></div><div class="path-node adapt"><i>✦</i><span>Interpret changed screen</span><b>AI USED HERE</b></div><div class="path-connector done"></div><div class="path-node done"><i>✓</i><span>Resume and verify</span></div></div><div class="lane-outcome success"><i>✓</i><span><b>Workflow completed</b><small>The new recovery can be reused next time.</small></span></div></article>
             </div>
           </div>
           <div class="benefit-list">
@@ -114,8 +86,8 @@
         <div class="section-heading"><div><div class="eyebrow">Why Telic</div><h2>Built between rigid bots and AI that rethinks every step.</h2></div><p class="section-copy dark">Most operational workflows are neither perfectly predictable nor fully open-ended. Telic is designed for work with a stable core and a smaller number of moments that need interpretation, adaptation, or review.</p></div>
         <div class="difference-grid">
           <article class="difference-card"><span class="difference-index">01 · MANUAL WORK</span><h3>Flexible, but difficult to scale</h3><p>People handle variation well, but volume brings more hiring, training, supervision, and cost.</p><div class="difference-fit">Best for highly judgment-based work</div></article>
-          <article class="difference-card"><span class="difference-index">02 · TRADITIONAL AUTOMATION</span><h3>Efficient until the path changes</h3><p>Fixed automation works on stable screens, but exceptions and updates create maintenance work.</p><div class="difference-fit">Best for completely fixed processes</div></article>
-          <article class="difference-card"><span class="difference-index">03 · GENERAL AI AGENTS</span><h3>Capable, but costly at volume</h3><p>Asking AI to reason through every action adds unnecessary processing time and cost to repeated work.</p><div class="difference-fit">Best for one-off, exploratory tasks</div></article>
+          <article class="difference-card"><span class="difference-index">02 · TRADITIONAL AUTOMATION</span><h3>Efficient until the path changes</h3><p>Fixed automation cannot reason through unfamiliar screens or unstructured information, so exceptions and updates create maintenance work.</p><div class="difference-fit">Best for completely fixed processes</div></article>
+          <article class="difference-card"><span class="difference-index">03 · GENERAL AI AGENTS</span><h3>Capable, but costly at volume</h3><p>Paying for AI to reason through every routine action makes repeated, high-volume execution unnecessarily expensive.</p><div class="difference-fit">Best for one-off, exploratory tasks</div></article>
           <article class="difference-card telic"><span class="difference-index">04 · TELIC</span><h3>Efficient on the routine. Intelligent on the variable.</h3><p>Telic reuses proven paths and concentrates AI effort on the parts that genuinely need it.</p><div class="difference-fit">Best for mostly repeatable workflows with real-world variation</div></article>
         </div>
       </div>
@@ -147,11 +119,11 @@
     </section>
 
     <section class="cta-section">
-      <div class="cta-panel shell"><div><h2>See how Telic could work in your operation.</h2><p>Bring us one workflow—well-defined or still messy. We’ll discuss where automation can create value and what a sensible first deployment could look like.</p></div><div class="cta-actions"><a class="button button-coral" href="contact.html#demo">Book a demo <span>↗</span></a><small>No detailed process documentation required.</small></div></div>
+      <div class="cta-panel shell"><div><h2>See how Telic could work in your operation.</h2><p>Bring us one workflow—well-defined or still messy. We’ll discuss where automation can create value and what a sensible first deployment could look like.</p></div><div class="cta-actions"><a class="button button-coral" href="contact.html#demo">Book a demo <span>↗</span></a></div></div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><p class="footer-description">Automation for high-volume business workflows with a repeatable core and real-world variation.</p></div><div class="footer-columns"><div class="footer-column"><strong>Product</strong><a href="product.html">Overview</a><a href="how-it-works.html">How it works</a></div><div class="footer-column"><strong>Solutions</strong><a href="solution-bpo.html">BPOs &amp; GCCs</a><a href="solution-enterprise.html">Enterprise</a><a href="solution-partners.html">Partners</a></div><div class="footer-column"><strong>Connect</strong><a href="contact.html">Contact</a><a href="contact.html#demo">Book a demo</a></div></div></div><div class="footer-bottom"><span>© 2026 Telic</span><span>Built for real-world operations.</span></div></div></footer>
-  <script src="site.js?v=3"></script>
+  <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><p class="footer-description">Automation for business workflows with a repeatable core and real-world variation.</p></div><div class="footer-columns"><div class="footer-column"><strong>Product</strong><a href="product.html">Overview</a><a href="how-it-works.html">How it works</a></div><div class="footer-column"><strong>Solutions</strong><a href="solution-bpo.html">BPOs &amp; GCCs</a><a href="solution-enterprise.html">Enterprise</a><a href="solution-partners.html">Partners</a></div><div class="footer-column"><strong>Connect</strong><a href="contact.html">Contact</a><a href="contact.html#demo">Book a demo</a></div></div></div><div class="footer-bottom"><span>© 2026 Telic</span><span>Built for real-world operations.</span></div></div></footer>
+  <script src="site.js?v=4"></script>
 </body>
 </html>
