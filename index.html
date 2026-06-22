@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Telic automates high-volume business workflows that combine repeatable work with changing information, decisions, and exceptions.">
   <title>Telic — Automation for real-world business workflows</title>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <header class="site-header">
@@ -37,25 +37,22 @@
           <h1>Complete more work with less manual effort.</h1>
           <p class="lede">Telic automates high-volume workflows that follow a familiar process—but still involve changing information, messy documents, decisions, and exceptions.</p>
           <div class="hero-actions"><a class="button button-coral" href="contact.html#demo">Book a demo <span>↗</span></a><a class="button button-ghost" href="how-it-works.html">See how Telic works</a></div>
-          <div class="hero-note"><i></i>Best suited to mostly repeatable, operational work.</div>
         </div>
         <div class="hero-runtime" aria-label="Telic directing a purchase order workflow inside a business application">
-          <div class="runtime-explainer"><span>LIVE WORKFLOW</span><strong>Telic directs the work inside the application</strong></div>
           <div class="runtime-split">
             <div class="business-app">
               <div class="visual-label"><i></i>BUSINESS APPLICATION</div>
               <div class="app-chrome"><span>Operations Suite</span><span>— □ ×</span></div>
-              <div class="app-layout"><aside><b>OS</b><span>Orders</span><span>Customers</span><span>Inventory</span><span>Reports</span></aside><div class="app-workspace"><div class="app-title"><div><small>ORDER ENTRY</small><strong>New purchase order</strong></div><span>Draft</span></div><div class="app-fields"><label>Customer<b>Northstar Supplies</b></label><label>Reference<b>PO-73918</b></label><label class="wide active-field">Product<b>Valve assembly · pack 25</b><em>Current action</em></label><label>Quantity<b>4</b></label><label>Delivery<b>Warehouse B</b></label></div><div class="app-table"><span>ITEM</span><span>QTY</span><span>STATUS</span><b>Valve assembly</b><b>4</b><b>Matched</b></div></div></div>
+              <div class="app-layout"><aside><b>OS</b><span>Orders</span><span>Customers</span><span>Inventory</span><span>Reports</span></aside><div class="app-workspace"><div class="app-title"><div><small>ORDER ENTRY</small><strong>New purchase order</strong></div><span>Draft</span></div><div class="app-fields"><label data-hero-step="0">Customer<b>Northstar Supplies</b><em>Current action</em></label><label data-hero-step="1">Reference<b>PO-73918</b><em>Current action</em></label><label class="wide" data-hero-step="2">Product<b>Valve assembly · pack 25</b><em>Current action</em></label><label data-hero-step="2">Quantity<b>4</b></label><label>Delivery<b>Warehouse B</b></label></div><div class="app-table" data-hero-step="3"><span>ITEM</span><span>QTY</span><span>STATUS</span><b>Valve assembly</b><b>4</b><b>Ready to submit</b><em>Verifying result</em></div></div></div>
             </div>
             <div class="control-link"><span>→</span><small>DIRECTS<br>AND CHECKS</small></div>
             <div class="telic-control">
               <div class="visual-label"><i></i>TELIC CONTROL</div>
               <div class="control-head"><div><small>ORDER ENTRY · RUN 0284</small><strong>Executing the defined workflow</strong></div><span>LIVE</span></div>
-              <div class="control-flow"><div class="control-step complete"><i>✓</i><span><b>Read incoming order</b><small>Input understood</small></span></div><div class="flow-line done"></div><div class="control-step complete"><i>✓</i><span><b>Open customer record</b><small>Verified path reused</small></span></div><div class="flow-line running"></div><div class="control-step current"><i>3</i><span><b>Enter product</b><small>Acting in Operations Suite</small></span></div><div class="flow-line"></div><div class="control-step"><i>4</i><span><b>Verify and submit</b><small>Next</small></span></div></div>
-              <div class="control-status"><span class="status-eye">◎</span><div><small>OBSERVING APPLICATION</small><strong>Product field is ready</strong></div></div>
+              <div class="control-flow"><div class="control-step" data-hero-step="0"><i>1</i><span><b>Find customer</b><small>Open the correct account</small></span></div><div class="flow-line"></div><div class="control-step" data-hero-step="1"><i>2</i><span><b>Create order</b><small>Enter the order reference</small></span></div><div class="flow-line"></div><div class="control-step" data-hero-step="2"><i>3</i><span><b>Add line item</b><small>Enter product and quantity</small></span></div><div class="flow-line"></div><div class="control-step" data-hero-step="3"><i>4</i><span><b>Submit and verify</b><small>Confirm the order was created</small></span></div></div>
+              <div class="control-status"><span class="status-eye">◎</span><div><small>EXECUTING IN APPLICATION</small><strong data-hero-status>Finding the customer account</strong></div></div>
             </div>
           </div>
-          <p class="visual-caption">Telic follows the workflow, performs each action in the software your team already uses, and checks the result before continuing.</p>
         </div>
       </div>
     </section>
@@ -93,15 +90,14 @@
       </div>
     </section>
 
-    <section class="section cream-section">
+    <section class="section cream-section outcome-section">
       <div class="shell">
-        <div class="section-heading"><div><div class="eyebrow">Where Telic works</div><h2>Across the environments where business work actually happens.</h2></div><p class="section-copy">Telic is useful when a workflow crosses several systems, includes older or internally built software, or still depends on people moving information between screens and files.</p></div>
-        <div class="environment-grid">
-          <article class="environment-card large"><div class="environment-art"></div><h3>Desktop and legacy applications</h3><p>Operate inside Windows software and internal tools that remain central to day-to-day work.</p></article>
-          <article class="environment-card medium"><div class="environment-art"></div><h3>Virtual desktops</h3><p>Run work in managed remote environments, including customer-controlled desktops.</p></article>
-          <article class="environment-card third"><div class="environment-art"></div><h3>Browser portals</h3><p>Continue workflows through web-based steps without losing the wider operational context.</p></article>
-          <article class="environment-card third"><div class="environment-art"></div><h3>Documents and files</h3><p>Read changing information from invoices, orders, forms, spreadsheets, and attachments.</p></article>
-          <article class="environment-card third"><div class="environment-art"></div><h3>Mixed workflows</h3><p>Move work across applications and formats while keeping one traceable process.</p></article>
+        <div class="section-heading"><div><div class="eyebrow">What changes with Telic</div><h2>Turn more of the process into dependable execution.</h2></div><p class="section-copy">Telic expands the part of a workflow that can be automated without forcing every case into one rigid path or paying for AI to rethink routine actions.</p></div>
+        <div class="outcome-grid">
+          <article class="outcome-card"><span>01</span><strong>Automate beyond the happy path</strong><p>Keep work moving when documents vary, screens change, or familiar exceptions appear.</p></article>
+          <article class="outcome-card featured"><span>02</span><strong>Control the cost of scale</strong><p>Reuse verified execution for routine steps and reserve AI for decisions that actually need it.</p></article>
+          <article class="outcome-card"><span>03</span><strong>Reduce manual exception queues</strong><p>Resolve recoverable interruptions inside the workflow while preserving human control over consequential decisions.</p></article>
+          <article class="outcome-card"><span>04</span><strong>Improve without rebuilding</strong><p>Capture successful paths and recoveries so repeated work becomes easier to operate over time.</p></article>
         </div>
       </div>
     </section>
@@ -110,7 +106,7 @@
       <div class="how-grid shell">
         <div class="how-intro"><div class="eyebrow">How Telic works</div><h2>One defined process. Different kinds of execution.</h2><p class="section-copy dark">Telic separates routine execution from moments that need intelligence, then verifies the result before the workflow moves on.</p><a class="button button-ghost" href="how-it-works.html">Explore the full process →</a></div>
         <div class="how-steps">
-          <article class="how-step"><span class="how-number">01</span><div><h3>Define the expected process</h3><p>Telic starts from the steps, decisions, success conditions, and human review points that make up the workflow.</p></div></article>
+          <article class="how-step"><span class="how-number">01</span><div><h3>Describe the workflow in natural language</h3><p>Create a plain-language process definition document (PDD) much like you would explain the work to a person. Telic turns the steps, rules, exceptions, and expected results into a structured workflow.</p></div></article>
           <article class="how-step"><span class="how-number">02</span><div><h3>Run familiar steps efficiently</h3><p>Known and previously verified paths are reused instead of asking an AI model to rediscover every action.</p></div></article>
           <article class="how-step"><span class="how-number">03</span><div><h3>Use intelligence where it adds value</h3><p>AI handles changing information, ambiguity, and recoverable exceptions within the relevant part of the workflow.</p></div></article>
           <article class="how-step"><span class="how-number">04</span><div><h3>Verify, record, and continue</h3><p>Telic checks meaningful outcomes, records what happened, and asks for human guidance when safe continuation is uncertain.</p></div></article>
@@ -124,6 +120,6 @@
   </main>
 
   <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><p class="footer-description">Automation for business workflows with a repeatable core and real-world variation.</p></div><div class="footer-columns"><div class="footer-column"><strong>Product</strong><a href="product.html">Overview</a><a href="how-it-works.html">How it works</a></div><div class="footer-column"><strong>Solutions</strong><a href="solution-bpo.html">BPOs &amp; GCCs</a><a href="solution-enterprise.html">Enterprise</a><a href="solution-partners.html">Partners</a></div><div class="footer-column"><strong>Connect</strong><a href="contact.html">Contact</a><a href="contact.html#demo">Book a demo</a></div></div></div><div class="footer-bottom"><span>© 2026 Telic</span><span>Built for real-world operations.</span></div></div></footer>
-  <script src="site.js?v=4"></script>
+  <script src="site.js?v=5"></script>
 </body>
 </html>
