@@ -69,6 +69,52 @@ if (heroControlSteps.length) {
   }
 }
 
+const howVisual = document.querySelector('.design-execution-visual[data-how-state]');
+
+if (howVisual) {
+  const howNodes = Array.from(howVisual.querySelectorAll('[data-how-node]'));
+  const howLinks = Array.from(howVisual.querySelectorAll('.node-link'));
+  const howTargets = Array.from(howVisual.querySelectorAll('[data-how-target]'));
+  const howBridge = howVisual.querySelector('[data-how-bridge]');
+  const howBridgeNote = howVisual.querySelector('[data-how-bridge-note]');
+  const exceptionTag = howNodes[2]?.querySelector('em');
+  const howFrames = [
+    { state: 'read', node: 0, target: -1, bridge: 'STEP 1', note: 'READING INPUT', delay: 1800 },
+    { state: 'execute', node: 1, target: 1, bridge: 'STEP 2', note: 'EXECUTING IN APP', delay: 2100 },
+    { state: 'exception', node: 2, target: 2, bridge: 'STEP 3', note: 'EXCEPTION DETECTED', delay: 2300 },
+    { state: 'model', node: 2, target: 2, bridge: 'STEP 3', note: 'AI MODEL RESOLVING', delay: 2600 },
+    { state: 'continue', node: 2, target: 2, bridge: 'STEP 3', note: 'RESOLVED — CONTINUING', delay: 1900 },
+    { state: 'verified', node: 3, target: 3, bridge: 'STEP 4', note: 'VERIFYING RESULT', delay: 2600 }
+  ];
+  let howFrameIndex = 0;
+  let howTimer;
+
+  const runHowFrame = (index) => {
+    const frame = howFrames[index];
+    howVisual.dataset.howState = frame.state;
+    howNodes.forEach((node, nodeIndex) => {
+      node.classList.toggle('complete', nodeIndex < frame.node || (frame.state === 'verified' && nodeIndex < 3));
+      node.classList.toggle('current', nodeIndex === frame.node);
+      const icon = node.querySelector('i');
+      if (icon) icon.textContent = nodeIndex < frame.node ? '✓' : String(nodeIndex + 1);
+    });
+    howLinks.forEach((link, linkIndex) => link.classList.toggle('done', linkIndex < frame.node));
+    howTargets.forEach((target) => target.classList.toggle('how-current', Number(target.dataset.howTarget) === frame.target));
+    if (exceptionTag) {
+      exceptionTag.textContent = frame.state === 'model' ? 'AI MODEL' : frame.state === 'continue' ? 'RESOLVED' : 'EXCEPTION';
+    }
+    if (howBridge) howBridge.textContent = frame.bridge;
+    if (howBridgeNote) howBridgeNote.textContent = frame.note;
+    clearTimeout(howTimer);
+    howTimer = window.setTimeout(() => {
+      howFrameIndex = (index + 1) % howFrames.length;
+      runHowFrame(howFrameIndex);
+    }, frame.delay);
+  };
+
+  runHowFrame(howFrameIndex);
+}
+
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
