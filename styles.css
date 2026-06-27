@@ -592,6 +592,9 @@ h3 { letter-spacing: -.025em; }
 .optional { color: #66728d; font-weight: 500; }
 .form-field input, .form-field textarea, .form-field select { width: 100%; border: 1px solid var(--line-dark); border-radius: 10px; color: var(--cream); background: #0e1427; outline: none; }
 .form-field input, .form-field select { height: 47px; padding: 0 13px; }
+.select-control { position: relative; }
+.select-control::after { content: ""; position: absolute; top: 50%; right: 18px; width: 7px; height: 7px; border-right: 1.5px solid #aab4ca; border-bottom: 1.5px solid #aab4ca; pointer-events: none; transform: translateY(-68%) rotate(45deg); }
+.select-control select { appearance: none; padding-right: 50px; }
 .form-field textarea { min-height: 135px; padding: 13px; resize: vertical; }
 .form-field input:focus, .form-field textarea:focus, .form-field select:focus { border-color: var(--coral); box-shadow: 0 0 0 3px rgba(255,105,94,.1); }
 .form-submit { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 18px; }
