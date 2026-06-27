@@ -30,6 +30,25 @@ document.querySelectorAll('.nav-link, .solution-link').forEach((link) => {
   });
 });
 
+const audienceTabs = Array.from(document.querySelectorAll('[data-audience]'));
+const audiencePanels = Array.from(document.querySelectorAll('[data-audience-panel]'));
+
+audienceTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const audience = tab.dataset.audience;
+    audienceTabs.forEach((item) => {
+      const selected = item === tab;
+      item.classList.toggle('active', selected);
+      item.setAttribute('aria-selected', String(selected));
+    });
+    audiencePanels.forEach((panel) => {
+      const selected = panel.dataset.audiencePanel === audience;
+      panel.classList.toggle('active', selected);
+      panel.hidden = !selected;
+    });
+  });
+});
+
 const heroControlSteps = Array.from(document.querySelectorAll('.hero-runtime .control-step[data-hero-step]'));
 const heroAppTargets = Array.from(document.querySelectorAll('.hero-runtime [data-hero-step]:not(.control-step)'));
 const heroFlowLines = Array.from(document.querySelectorAll('.hero-runtime .flow-line'));

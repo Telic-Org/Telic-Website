@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Telic automates high-volume business workflows that combine repeatable work with changing information, decisions, and exceptions.">
   <title>Telic — Automation for real-world business workflows</title>
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav shell" aria-label="Primary navigation">
       <a class="brand" href="index.html" aria-label="Telic home"><span class="brand-mark" aria-hidden="true"></span>telic</a>
       <div class="nav-links">
-        <a class="nav-link" href="product.html">Product</a>
+        
         <div class="solutions">
           <button class="solutions-trigger" type="button" aria-expanded="false">Solutions <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
           <div class="solutions-menu">
@@ -90,14 +90,18 @@
       </div>
     </section>
 
-    <section class="section cream-section outcome-section">
+    <section class="section cream-section audience-section">
       <div class="shell">
-        <div class="section-heading"><div><div class="eyebrow">What changes with Telic</div><h2>Turn more of the process into dependable execution.</h2></div><p class="section-copy">Telic expands the part of a workflow that can be automated without forcing every case into one rigid path or paying for AI to rethink routine actions.</p></div>
-        <div class="outcome-grid">
-          <article class="outcome-card"><span>01</span><strong>Automate beyond the happy path</strong><p>Keep work moving when documents vary, screens change, or familiar exceptions appear.</p></article>
-          <article class="outcome-card"><span>02</span><strong>Control the cost of scale</strong><p>Reuse verified execution for routine steps and reserve AI for decisions that actually need it.</p></article>
-          <article class="outcome-card"><span>03</span><strong>Reduce manual exception queues</strong><p>Resolve recoverable interruptions inside the workflow while preserving human control over consequential decisions.</p></article>
-          <article class="outcome-card"><span>04</span><strong>Improve without rebuilding</strong><p>Capture successful paths and recoveries so repeated work becomes easier to operate over time.</p></article>
+        <div class="section-heading"><div><div class="eyebrow">Built for your operating model</div><h2>Different teams. A different reason to choose Telic.</h2></div><p class="section-copy">Select the environment closest to yours to see where Telic fits, what it changes, and how your team stays in control.</p></div>
+        <div class="audience-tabs" role="tablist" aria-label="Customer segments">
+          <button class="audience-tab active" type="button" role="tab" aria-selected="true" aria-controls="audience-bpo" data-audience="bpo"><span>01</span>BPOs &amp; GCCs</button>
+          <button class="audience-tab" type="button" role="tab" aria-selected="false" aria-controls="audience-enterprise" data-audience="enterprise"><span>02</span>Enterprise operations</button>
+          <button class="audience-tab" type="button" role="tab" aria-selected="false" aria-controls="audience-partners" data-audience="partners"><span>03</span>Automation partners</button>
+        </div>
+        <div class="audience-panels">
+          <article class="audience-panel active" id="audience-bpo" role="tabpanel" data-audience-panel="bpo"><div class="audience-copy"><span class="audience-kicker">FOR SERVICE OPERATIONS</span><h3>Increase throughput without growing delivery teams at the same rate.</h3><p>Telic executes recurring client work across the applications your teams already use, while handling familiar variation and routing consequential decisions to supervisors.</p><ul><li>Standardize delivery across teams and shifts</li><li>Reduce manual exception queues and training dependence</li><li>Give supervisors live visibility and controlled takeover</li></ul><a class="button button-ink" href="solution-bpo.html">Explore BPO &amp; GCC solutions →</a></div><div class="audience-map"><div><small>YOUR PRIORITY</small><strong>More completed work per delivery team</strong></div><span>→</span><div><small>TELIC'S ROLE</small><strong>Execute routine cases and resolve familiar variation</strong></div><span>→</span><div><small>TEAM CONTROL</small><strong>Review exceptions, intervene, and audit outcomes</strong></div></div></article>
+          <article class="audience-panel" id="audience-enterprise" role="tabpanel" data-audience-panel="enterprise" hidden><div class="audience-copy"><span class="audience-kicker">FOR INTERNAL OPERATIONS</span><h3>Remove recurring manual work without replacing the systems around it.</h3><p>Telic coordinates processes across desktop software, portals, documents, and internal tools while preserving approvals, controls, and ownership within your operation.</p><ul><li>Automate cross-system finance, procurement, and administrative work</li><li>Keep human approval where policy or judgment requires it</li><li>Verify outcomes and preserve a traceable operating history</li></ul><a class="button button-ink" href="solution-enterprise.html">Explore enterprise solutions →</a></div><div class="audience-map"><div><small>YOUR PRIORITY</small><strong>Reduce manual handoffs across existing systems</strong></div><span>→</span><div><small>TELIC'S ROLE</small><strong>Carry the defined process from input to verified result</strong></div><span>→</span><div><small>TEAM CONTROL</small><strong>Approve, pause, guide, or take over when needed</strong></div></div></article>
+          <article class="audience-panel" id="audience-partners" role="tabpanel" data-audience-panel="partners" hidden><div class="audience-copy"><span class="audience-kicker">FOR AGENCIES &amp; CONSULTANCIES</span><h3>Deliver automation in environments where brittle scripts stop being enough.</h3><p>Use Telic as the execution foundation beneath your customer solution, so your team can focus on process design, integration, and the business outcome.</p><ul><li>Serve desktop-heavy and mixed application environments</li><li>Reuse delivery patterns instead of rebuilding execution machinery</li><li>Supervise customer workflows and improve them after launch</li></ul><a class="button button-ink" href="solution-partners.html">Explore partner solutions →</a></div><div class="audience-map"><div><small>YOUR PRIORITY</small><strong>Deliver more customer workflows with less custom plumbing</strong></div><span>→</span><div><small>TELIC'S ROLE</small><strong>Provide reusable execution, recovery, and verification</strong></div><span>→</span><div><small>PARTNER CONTROL</small><strong>Own the solution, customer relationship, and operation</strong></div></div></article>
         </div>
       </div>
     </section>
@@ -119,7 +123,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><p class="footer-description">Automation for business workflows with a repeatable core and real-world variation.</p></div><div class="footer-columns"><div class="footer-column"><strong>Product</strong><a href="product.html">Overview</a><a href="how-it-works.html">How it works</a></div><div class="footer-column"><strong>Solutions</strong><a href="solution-bpo.html">BPOs &amp; GCCs</a><a href="solution-enterprise.html">Enterprise</a><a href="solution-partners.html">Partners</a></div><div class="footer-column"><strong>Connect</strong><a href="contact.html">Contact</a><a href="contact.html#demo">Book a demo</a></div></div></div><div class="footer-bottom"><span>© 2026 Telic</span><span>Built for real-world operations.</span></div></div></footer>
-  <script src="site.js?v=6"></script>
+  <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><p class="footer-description">Automation for business workflows with a repeatable core and real-world variation.</p></div><div class="footer-columns"><div class="footer-column"><strong>Platform</strong><a href="how-it-works.html">How it works</a></div><div class="footer-column"><strong>Solutions</strong><a href="solution-bpo.html">BPOs &amp; GCCs</a><a href="solution-enterprise.html">Enterprise</a><a href="solution-partners.html">Partners</a></div><div class="footer-column"><strong>Connect</strong><a href="contact.html">Contact</a><a href="contact.html#demo">Book a demo</a></div></div></div><div class="footer-bottom"><span>© 2026 Telic</span><span>Built for real-world operations.</span></div></div></footer>
+  <script src="site.js?v=7"></script>
 </body>
 </html>
