@@ -1,16 +1,124 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Contact Telic or book a workflow automation demonstration.">
-  <title>Contact — Telic</title>
-  <link rel="stylesheet" href="styles.css?v=10">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Show us a workflow — Telic</title>
+<meta name="description" content="Tell us about one back-office workflow and we'll show you how Telic would run it.">
+<meta name="theme-color" content="#f3ecdf">
+<meta property="og:title" content="Show us a workflow — Telic">
+<meta property="og:description" content="Tell us about one back-office workflow and we'll show you how Telic would run it.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>try{var f=localStorage.getItem("telic-font");if(f)document.documentElement.dataset.font=f;if(sessionStorage.getItem("telic-seen")==="1")document.documentElement.classList.add("seen")}catch(e){}</script>
 </head>
-<body>
-  <header class="site-header"><nav class="nav shell" aria-label="Primary navigation"><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><div class="nav-links"><div class="solutions"><button class="solutions-trigger" type="button" aria-expanded="false">Solutions <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="m2.5 4.5 3.5 3.5 3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button><div class="solutions-menu"><a class="solution-link" href="solution-bpo.html"><span class="solution-icon">01</span><span><strong>BPOs</strong><small>Increase throughput across client delivery operations.</small></span></a><a class="solution-link" href="solution-enterprise-gcc.html"><span class="solution-icon">02</span><span><strong>Enterprise operations &amp; GCCs</strong><small>Scale recurring work across enterprise and GCC operations.</small></span></a><a class="solution-link" href="solution-agencies.html"><span class="solution-icon">03</span><span><strong>Automation agencies &amp; RPA consultancies</strong><small>Deliver more customer workflows with Telic.</small></span></a></div></div><a class="nav-link" href="how-it-works.html">How it works</a><a class="nav-link active" href="contact.html">Contact</a></div><a class="button button-coral nav-cta" href="#demo">Book a demo ↗</a><button class="mobile-toggle" type="button" aria-label="Toggle navigation"><svg width="19" height="19" viewBox="0 0 20 20"><path d="M3 5.5h14M3 10h14M3 14.5h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></nav></header>
-  <main><section class="inner-hero" id="demo"><div class="contact-layout shell"><div class="contact-copy"><div class="eyebrow">Contact Telic</div><h1>Bring us one workflow.</h1><p>Book a demonstration, explore a possible deployment, ask a technical question, or simply start a conversation.</p></div><div class="contact-card"><h2>Start a conversation</h2><form id="contact-form"><div class="form-grid"><div class="form-field"><label for="name">Name <span class="optional">— optional</span></label><input id="name" name="name" autocomplete="name"></div><div class="form-field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="form-field"><label for="company">Company <span class="optional">— optional</span></label><input id="company" name="company" autocomplete="organization"></div><div class="form-field"><label for="interest">What brings you here? <span class="optional">— optional</span></label><div class="select-control"><select id="interest" name="interest"><option value="">Select if useful</option><option>Book a product demo</option><option>Explore a workflow</option><option>Discuss an agency deployment</option><option>General question</option></select></div></div><div class="form-field full"><label for="message">How can we help?</label><textarea id="message" name="message" required placeholder="A sentence or two is enough."></textarea></div></div><div class="form-submit"><button class="button button-coral" type="submit">Send message ↗</button></div><div class="form-success" role="status">Thanks — we’ll be in touch.</div></form></div></div></section></main>
-  <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><p class="footer-description">Automation for business workflows with a repeatable core and real-world variation.</p></div><div class="footer-columns"><div class="footer-column"><strong>Platform</strong><a href="how-it-works.html">How it works</a></div><div class="footer-column"><strong>Solutions</strong><a href="solution-bpo.html">BPOs</a><a href="solution-enterprise-gcc.html">Enterprise operations &amp; GCCs</a><a href="solution-agencies.html">Automation agencies &amp; RPA consultancies</a></div><div class="footer-column"><strong>Connect</strong><a href="contact.html">Contact</a><a href="contact.html#demo">Book a demo</a></div></div></div><div class="footer-bottom"><span>© 2026 Telic</span><span>Built for real-world operations.</span></div></div></footer>
-  <script src="site.js?v=9"></script>
+<body data-page="contact">
+
+<div class="preloader" aria-hidden="true">
+  <svg class="pl-mark" viewBox="-40 -40 402 402">
+    <defs><filter id="plGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <path class="pl-solid" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/>
+    <path class="pl-outline" pathLength="1" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/>
+    <circle class="pl-ring" cx="161" cy="161" r="22"/>
+    <circle class="pl-node" cx="41" cy="41" r="22"/><circle class="pl-node" cx="161" cy="41" r="22"/><circle class="pl-node" cx="281" cy="41" r="22"/><circle class="pl-node" cx="161" cy="281" r="22"/><circle class="pl-node ai" cx="161" cy="161" r="19"/>
+    <circle class="pl-tip" r="5" cx="-100" cy="-100"/>
+  </svg>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 322 322"><path fill="currentColor" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/></symbol>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html" class="logo" aria-label="Telic home"><svg><use href="#mark"/></svg><span>Telic</span></a>
+    <nav class="nav__links" aria-label="Main"><a href="index.html#watch">Live demo</a><a href="product.html">Product</a><a href="use-cases.html">Use cases</a><a href="pricing.html">Pricing</a></nav>
+    <div class="nav__cta">
+      <a href="contact.html" class="btn btn--primary magnetic">Show us a workflow <span class="arrow">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile"><a href="index.html#watch">Live demo</a><a href="product.html">Product</a><a href="use-cases.html">Use cases</a><a href="pricing.html">Pricing</a><a href="contact.html">Show us a workflow</a></nav>
+
+<main id="top">
+<section class="section section--first" id="start">
+  <div class="wrap">
+    <div class="start reveal">
+      <div class="start__left">
+        <svg class="start__mark" aria-hidden="true"><use href="#mark"/></svg>
+        <h1 class="split">Show us the job <em>nobody wants.</em></h1>
+        <p>Tell us about one workflow — what goes in, which screens it touches, roughly how often. We'll come back with how Telic would run it.</p>
+        <a class="start__mail" href="mailto:daksh@telic.sh">daksh@telic.sh</a>
+      </div>
+      <form class="form" id="form" novalidate>
+        <div class="field"><label for="fName">Name</label><input id="fName" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="fEmail">Work email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field full"><label for="fCo">Company</label><input id="fCo" name="company" autocomplete="organization"></div>
+        <div class="field full"><label>You are</label>
+          <div class="seg">
+            <label><input type="radio" name="who" value="BPO / GCC" checked><span>A BPO or GCC</span></label>
+            <label><input type="radio" name="who" value="Operations team"><span>An ops team</span></label>
+            <label><input type="radio" name="who" value="Automation partner"><span>An automation partner</span></label>
+          </div>
+        </div>
+        <div class="field full"><label for="fMsg">The job</label><textarea id="fMsg" name="message" placeholder="e.g. ~3,000 emailed invoices a month, keyed into a desktop ERP, approvals above ₹1.5L"></textarea></div>
+        <div class="full form__foot"><button class="btn btn--light magnetic" type="submit">Send it over <span class="arrow">→</span></button><span id="formNote">Opens your email app with this filled in.</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== NEXT ============================== -->
+<section class="section section--tight" id="next">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">What happens next</span><h2 class="split">From one email to <em>one workflow running.</em></h2></div>
+    </div>
+    <ol class="nextsteps">
+      <li class="reveal"><span>01</span><h3>We read it</h3><p>We look at what you sent and come back with questions, or a quick yes, it fits.</p></li>
+      <li class="reveal" style="--d:.06s"><span>02</span><h3>You show us the job</h3><p>A short call where someone who does the work today shares their screen.</p></li>
+      <li class="reveal" style="--d:.12s"><span>03</span><h3>We show you Telic on it</h3><p>Telic running a similar workflow, so you can judge it on something real.</p></li>
+      <li class="reveal" style="--d:.18s"><span>04</span><h3>Pilot</h3><p>Our engineers set it up with your team, on your machines, on real cases.</p></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer dark" id="footer">
+  <div class="footer__inner">
+    <div class="wrap">
+      <div class="f-top">
+        <div class="f-cta">
+          <span class="eyebrow">Got a job nobody wants?</span><br>
+          <a class="f-mail" href="mailto:daksh@telic.sh" data-cursor="Email">daksh<em>@</em>telic.sh</a>
+        </div>
+        <div class="f-cols">
+          <div><h4>See it</h4><ul><li><a href="index.html#watch">Live demo</a></li><li><a href="product.html">How it works</a></li><li><a href="product.html#receipt">Run receipts</a></li></ul></div>
+          <div><h4>Decide</h4><ul><li><a href="use-cases.html">Use cases</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="pricing.html#faq">Questions</a></li></ul></div>
+          <div><h4>Talk</h4><ul><li><a href="contact.html">Show us a workflow</a></li><li><a href="mailto:daksh@telic.sh">Email us</a></li></ul></div>
+        </div>
+      </div>
+      <div class="f-live"><span><i class="dotlive"></i>India · <b id="fClock">--:--:--</b> IST</span><span>Since you opened this page, a person keying invoices would be on keystroke <b id="fKeys">0</b></span></div>
+      <div class="f-giant" aria-hidden="true">
+        <svg viewBox="-40 -40 402 402" id="fMark" data-cursor="Run"><path class="fg-outline" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/><circle class="fg-node" cx="41" cy="41" r="25"/><circle class="fg-node" cx="161" cy="41" r="25"/><circle class="fg-node" cx="281" cy="41" r="25"/><circle class="fg-node" cx="161" cy="161" r="22"/><circle class="fg-node" cx="161" cy="281" r="25"/></svg>
+        <div class="f-word pre" id="fWord"><span>T</span><span>e</span><span>l</span><span>i</span><span>c</span></div>
+      </div>
+      <div class="f-bottom"><span>© <span id="yr">2026</span> Telic · telic.sh</span><span>An AI operator for the back office</span><button class="totop" id="toTop" type="button">Back to top ↑</button></div>
+    </div>
+  </div>
+</footer>
+
+<div class="fontpick" id="fontpick" role="group" aria-label="Preview headline font">
+  <span>Headline font</span>
+  <button data-font="a">Instrument Serif</button><button data-font="b">Fraunces</button><button data-font="c">Bricolage</button>
+</div>
+
+
+<script src="main.js"></script>
 </body>
 </html>

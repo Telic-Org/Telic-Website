@@ -1,13 +1,271 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=how-it-works.html">
-  <link rel="canonical" href="how-it-works.html">
-  <title>How Telic works</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Telic works — Telic</title>
+<meta name="description" content="Telic thinks through a step once, remembers what worked, asks a person when it isn't sure, and writes a receipt for every run.">
+<meta name="theme-color" content="#f3ecdf">
+<meta property="og:title" content="How Telic works — Telic">
+<meta property="og:description" content="Telic thinks through a step once, remembers what worked, asks a person when it isn't sure, and writes a receipt for every run.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>try{var f=localStorage.getItem("telic-font");if(f)document.documentElement.dataset.font=f;if(sessionStorage.getItem("telic-seen")==="1")document.documentElement.classList.add("seen")}catch(e){}</script>
 </head>
-<body>
-  <p>The product overview has moved to <a href="how-it-works.html">How Telic works</a>.</p>
+<body data-page="product">
+
+<div class="preloader" aria-hidden="true">
+  <svg class="pl-mark" viewBox="-40 -40 402 402">
+    <defs><filter id="plGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <path class="pl-solid" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/>
+    <path class="pl-outline" pathLength="1" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/>
+    <circle class="pl-ring" cx="161" cy="161" r="22"/>
+    <circle class="pl-node" cx="41" cy="41" r="22"/><circle class="pl-node" cx="161" cy="41" r="22"/><circle class="pl-node" cx="281" cy="41" r="22"/><circle class="pl-node" cx="161" cy="281" r="22"/><circle class="pl-node ai" cx="161" cy="161" r="19"/>
+    <circle class="pl-tip" r="5" cx="-100" cy="-100"/>
+  </svg>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 322 322"><path fill="currentColor" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/></symbol>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html" class="logo" aria-label="Telic home"><svg><use href="#mark"/></svg><span>Telic</span></a>
+    <nav class="nav__links" aria-label="Main"><a href="index.html#watch">Live demo</a><a href="product.html" class="active" aria-current="page">Product</a><a href="use-cases.html">Use cases</a><a href="pricing.html">Pricing</a></nav>
+    <div class="nav__cta">
+      <a href="contact.html" class="btn btn--primary magnetic">Show us a workflow <span class="arrow">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile"><a href="index.html#watch">Live demo</a><a href="product.html">Product</a><a href="use-cases.html">Use cases</a><a href="pricing.html">Pricing</a><a href="contact.html">Show us a workflow</a></nav>
+
+<main id="top">
+
+<!-- ============================== PAGE HERO ============================== -->
+<section class="page-hero">
+  <svg class="page-hero__mark" aria-hidden="true" data-speed="-0.12"><use href="#mark"/></svg>
+  <div class="wrap">
+    <div class="crumbs"><span>Telic</span><span>/</span><span>Product</span></div>
+    <h1 class="split">Thinks the first time. <em>Remembers</em> after that.</h1>
+    <div class="page-hero__row">
+      <p class="lead">An AI that reasons through every click is slow and expensive at volume. A script that never reasons breaks the day a button moves. Telic works a step out once, replays what worked, and only thinks again when something is actually new.</p>
+      <div class="chips"><span>Learns by doing</span><span>Checks every result</span><span>Asks when unsure</span><span>Writes a receipt</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== INSIDE A STEP ============================== -->
+<section class="section section--tight" id="inside">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">Inside a single step</span><h2 class="split">Every step asks one question: <em>have I done this before?</em></h2></div>
+      <p class="lead">Pick a situation and follow what Telic does with it. Most steps take the top lane. The other two are why it doesn't fall over.</p>
+    </div>
+
+    <div class="sim reveal" id="sim">
+      <div class="sim__pick" role="tablist" aria-label="Situations">
+        <button class="active" data-lane="0" role="tab" aria-selected="true">A familiar step</button>
+        <button data-lane="1" role="tab" aria-selected="false">The screen changed</button>
+        <button data-lane="2" role="tab" aria-selected="false">Genuinely unclear</button>
+      </div>
+      <div class="sim__grid">
+        <div class="sim__stage">Recall</div><div class="sim__stage">Act</div><div class="sim__stage">Check</div><div class="sim__stage">Finish</div>
+
+        <div class="sim__cell" data-l="0" data-s="0"><b>Seen this exact step</b><span>Same screen, same kind of input</span></div>
+        <div class="sim__cell" data-l="0" data-s="1"><b>Replay from memory</b><span class="tag mem">Memory</span></div>
+        <div class="sim__cell" data-l="0" data-s="2"><b>Expected result on screen</b><span>Verified ✓</span></div>
+        <div class="sim__cell" data-l="0" data-s="3"><b>Next step</b><span>No AI used</span></div>
+
+        <div class="sim__cell" data-l="1" data-s="0"><b>Seen it — but something's off</b><span>A popup, a moved button, a new field</span></div>
+        <div class="sim__cell" data-l="1" data-s="1"><b>Stop, then work it out</b><span class="tag ai">AI</span></div>
+        <div class="sim__cell" data-l="1" data-s="2"><b>Result verified on screen</b><span>Verified ✓</span></div>
+        <div class="sim__cell" data-l="1" data-s="3"><b>Fix saved to memory</b><span>Next time: no AI needed</span></div>
+
+        <div class="sim__cell" data-l="2" data-s="0"><b>More than one right answer</b><span>Two suppliers, a judgment call</span></div>
+        <div class="sim__cell" data-l="2" data-s="1"><b>Pause safely, ask a person</b><span class="tag human">Person</span></div>
+        <div class="sim__cell" data-l="2" data-s="2"><b>Their choice verified</b><span>Verified ✓</span></div>
+        <div class="sim__cell" data-l="2" data-s="3"><b>Carry on from the same spot</b><span>Nothing redone</span></div>
+        <i class="sim__dot" id="simDot"></i>
+      </div>
+      <div class="sim__read">
+        <div><small>AI used</small><b id="simAI">0</b></div>
+        <div><small>Time on this step</small><b id="simT">0.4s</b></div>
+        <div class="sim__say" id="simSay">Telic recognises the step and replays exactly what worked last time.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============================== HOW IT LEARNS ============================== -->
+<section class="section" id="learns">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">Over time</span><h2 class="split">A thousand runs, <em>at a glance.</em></h2></div>
+      <p class="lead">Each column is one run of the same invoice workflow. Watch the thinking drain out of the routine steps and stay where the work really differs from case to case.</p>
+    </div>
+
+    <div class="history reveal" id="history">
+      <div class="history__top">
+        <div>
+          <div class="history__run">Run <b id="hRun">1</b></div>
+          <div class="history__note" id="hNote">First run: reasoning through every step and checking each result.</div>
+        </div>
+        <div class="history__stats">
+          <div><small>Thinking</small><b id="hAI">7</b><span>of 7 steps</span></div>
+          <div><small>Remembered</small><b id="hMem">0</b><span>of 7 steps</span></div>
+        </div>
+      </div>
+      <div class="history__chart">
+        <div class="history__rows">
+          <span>Read invoice</span><span>Find supplier</span><span>Check duplicates</span><span>Enter invoice</span><span>Add line items</span><span>Approval call</span><span>Post &amp; verify</span>
+        </div>
+        <svg id="barcode" preserveAspectRatio="none" aria-label="Each column is one run. Lime cells are steps that needed AI; dark cells were replayed from memory."></svg>
+      </div>
+      <div class="history__scrub">
+        <span>Run 1</span>
+        <input type="range" id="hRange" min="0" max="119" value="0" aria-label="Scrub through runs">
+        <span>Run 1,000</span>
+      </div>
+      <div class="history__legend"><span><i class="l-ai"></i>Needed AI</span><span><i class="l-ink"></i>Replayed from memory</span><span class="dim">Drag to scrub through a thousand runs. Illustrative.</span></div>
+    </div>
+  </div>
+</section>
+<!-- ============================== SIDEWAYS ============================== -->
+<section class="section" id="sideways">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">When things go sideways</span><h2 class="split">Real work is <em>messy.</em> Here's what Telic does about it.</h2></div>
+      <p class="lead">Scripts fail quietly. Agents improvise. Telic does neither: it stops, deals with the one thing that changed, or hands it to a person — and writes down what happened.</p>
+    </div>
+    <div class="sideways">
+      <article class="sw reveal">
+        <div class="sw__stage st-popup" aria-hidden="true">
+          <div class="mwin"><div class="mwin__bar"></div><div class="mwin__body"><i></i><i></i><i></i><i></i></div>
+            <div class="mpop"><div class="mwin__bar"></div><p>Update available</p><span>Restart</span><span class="later">Later</span></div>
+          </div>
+          <span class="sw__tag t-ai">Fixed · remembered</span>
+        </div>
+        <h3>A popup nobody warned you about</h3>
+        <p>The remembered step fails. Telic stops before it clicks anything wrong, works out what the window wants, and saves that answer for next time.</p>
+      </article>
+      <article class="sw reveal" style="--d:.1s">
+        <div class="sw__stage st-dupe" aria-hidden="true">
+          <div class="drow r1"><b>V-2048</b> Northstar Supplies Pvt Ltd · Pune</div>
+          <div class="drow r2"><b>V-3117</b> Northstar Supplies &amp; Co · Mumbai</div>
+          <span class="sw__tag t-human">Asking a person</span>
+          <span class="sw__tag t-ink">Resumed</span>
+        </div>
+        <h3>Two suppliers that both look right</h3>
+        <p>Guessing here creates a mess someone fixes next month. So Telic pauses and asks. You decide, hand it back, and it picks up mid-step.</p>
+      </article>
+      <article class="sw reveal" style="--d:.2s">
+        <div class="sw__stage st-scan" aria-hidden="true">
+          <div class="scanpage"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i><i class="e"></i><i class="f"></i></div>
+          <span class="sw__tag t-ai">Read · 1 field to check</span>
+        </div>
+        <h3>A scan that's crooked, faint and stapled</h3>
+        <p>Reading messy documents is exactly where AI earns its keep. Anything Telic isn't confident about gets flagged for a quick look, not typed in blind.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ============================== RECEIPT ============================== -->
+<section class="section dark" id="receipt">
+  <div class="wrap receipt-wrap">
+    <div class="reveal">
+      <span class="eyebrow">Proof, not promises</span>
+      <h2 class="split">Every run comes with a <em>receipt.</em></h2>
+      <p class="lead">Every click, every screen before and after, every decision the AI made and why, every time a person stepped in. Hand it to your auditor. Or your client.</p>
+      <ul class="ticks">
+        <li>Screenshots of every step</li>
+        <li>The reasoning behind each AI decision</li>
+        <li>Who took over, when, and what they did</li>
+        <li>A final check that the record really saved</li>
+      </ul>
+    </div>
+    <div class="receipt reveal" id="receiptEl" aria-label="Sample run receipt">
+      <div class="receipt__paper">
+        <div class="r-head"><svg><use href="#mark"/></svg><b>TELIC · RUN RECEIPT</b><span>Sample</span></div>
+        <div class="r-meta">Run #1,284 · AP-Desk-07<br>Supplier invoice → TradeDesk</div>
+        <div class="r-rule"></div>
+        <div class="r-line"><span>10:42:01</span><span>READ invoice NS/0812</span><em class="ai">AI</em></div>
+        <div class="r-line"><span>10:42:03</span><span>FIND supplier V-2048</span><em>MEM</em></div>
+        <div class="r-line"><span>10:42:04</span><span>CHECK no duplicate</span><em>MEM</em></div>
+        <div class="r-line"><span>10:42:05</span><span>ENTER header + 3 lines</span><em>MEM</em></div>
+        <div class="r-line"><span>10:42:07</span><span>DECIDE ₹1,82,664 &gt; limit</span><em class="ai">AI</em></div>
+        <div class="r-line"><span>10:42:09</span><span>APPROVE A. Mehta, AP lead</span><em class="hm">PERSON</em></div>
+        <div class="r-line"><span>10:42:10</span><span>POST record AP-77341</span><em>MEM</em></div>
+        <div class="r-line"><span>10:42:11</span><span>VERIFY matches invoice</span><em>✓</em></div>
+        <div class="r-rule"></div>
+        <div class="r-sum"><span>Screenshots</span><span>16</span></div>
+        <div class="r-sum"><span>Steps that used AI</span><span>2 of 8</span></div>
+        <div class="r-sum"><span>Steps by a person</span><span>1</span></div>
+        <div class="r-total"><span>RESULT</span><span>POSTED ✓</span></div>
+        <div class="r-bars"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FITS ============================== -->
+<section class="section" id="fits">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">Fits around what you have</span><h2 class="split">Nothing to rip out. <em>Nothing to rebuild.</em></h2></div>
+      <p class="lead">Telic lives where the work already happens and talks to the tools you already use.</p>
+    </div>
+    <div class="wall">
+      <div class="brick brick--ink reveal"><b>On your machines</b><span>Telic runs on the desktops your team already uses. For sensitive work, the cloud side can run in your private cloud or on-prem.</span></div>
+      <div class="brick brick--ink reveal" style="--d:.05s"><b>Any AI model</b><span>The best model for each step, swapped as better ones arrive. No lock-in to a single provider.</span></div>
+      <div class="brick brick--ink reveal" style="--d:.1s"><b>Plugs into your stack</b><span>Start runs from an API call, a webhook, n8n or Zapier — and hand the results straight back.</span></div>
+    </div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="wrap">
+    <a class="ctaband reveal" href="contact.html">
+      <svg aria-hidden="true"><use href="#mark"/></svg>
+      <span class="ctaband__t">Show us the job <em>nobody wants.</em></span>
+      <span class="btn btn--light">Start here <span class="arrow">→</span></span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="footer dark" id="footer">
+  <div class="footer__inner">
+    <div class="wrap">
+      <div class="f-top">
+        <div class="f-cta">
+          <span class="eyebrow">Got a job nobody wants?</span><br>
+          <a class="f-mail" href="mailto:daksh@telic.sh" data-cursor="Email">daksh<em>@</em>telic.sh</a>
+        </div>
+        <div class="f-cols">
+          <div><h4>See it</h4><ul><li><a href="index.html#watch">Live demo</a></li><li><a href="product.html">How it works</a></li><li><a href="product.html#receipt">Run receipts</a></li></ul></div>
+          <div><h4>Decide</h4><ul><li><a href="use-cases.html">Use cases</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="pricing.html#faq">Questions</a></li></ul></div>
+          <div><h4>Talk</h4><ul><li><a href="contact.html">Show us a workflow</a></li><li><a href="mailto:daksh@telic.sh">Email us</a></li></ul></div>
+        </div>
+      </div>
+      <div class="f-live"><span><i class="dotlive"></i>India · <b id="fClock">--:--:--</b> IST</span><span>Since you opened this page, a person keying invoices would be on keystroke <b id="fKeys">0</b></span></div>
+      <div class="f-giant" aria-hidden="true">
+        <svg viewBox="-40 -40 402 402" id="fMark" data-cursor="Run"><path class="fg-outline" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/><circle class="fg-node" cx="41" cy="41" r="25"/><circle class="fg-node" cx="161" cy="41" r="25"/><circle class="fg-node" cx="281" cy="41" r="25"/><circle class="fg-node" cx="161" cy="161" r="22"/><circle class="fg-node" cx="161" cy="281" r="25"/></svg>
+        <div class="f-word pre" id="fWord"><span>T</span><span>e</span><span>l</span><span>i</span><span>c</span></div>
+      </div>
+      <div class="f-bottom"><span>© <span id="yr">2026</span> Telic · telic.sh</span><span>An AI operator for the back office</span><button class="totop" id="toTop" type="button">Back to top ↑</button></div>
+    </div>
+  </div>
+</footer>
+
+<div class="fontpick" id="fontpick" role="group" aria-label="Preview headline font">
+  <span>Headline font</span>
+  <button data-font="a">Instrument Serif</button><button data-font="b">Fraunces</button><button data-font="c">Bricolage</button>
+</div>
+
+
+<script src="main.js"></script>
 </body>
 </html>

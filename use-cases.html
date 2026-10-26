@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Use cases — Telic</title>
+<meta name="description" content="Invoice entry, claims capture, order processing, document checks, reconciliation and vendor onboarding — in the old software your back office runs on.">
+<meta name="theme-color" content="#f3ecdf">
+<meta property="og:title" content="Use cases — Telic">
+<meta property="og:description" content="Invoice entry, claims capture, order processing, document checks, reconciliation and vendor onboarding — in the old software your back office runs on.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>try{var f=localStorage.getItem("telic-font");if(f)document.documentElement.dataset.font=f;if(sessionStorage.getItem("telic-seen")==="1")document.documentElement.classList.add("seen")}catch(e){}</script>
+</head>
+<body data-page="use-cases">
+
+<div class="preloader" aria-hidden="true">
+  <svg class="pl-mark" viewBox="-40 -40 402 402">
+    <defs><filter id="plGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <path class="pl-solid" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/>
+    <path class="pl-outline" pathLength="1" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/>
+    <circle class="pl-ring" cx="161" cy="161" r="22"/>
+    <circle class="pl-node" cx="41" cy="41" r="22"/><circle class="pl-node" cx="161" cy="41" r="22"/><circle class="pl-node" cx="281" cy="41" r="22"/><circle class="pl-node" cx="161" cy="281" r="22"/><circle class="pl-node ai" cx="161" cy="161" r="19"/>
+    <circle class="pl-tip" r="5" cx="-100" cy="-100"/>
+  </svg>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 322 322"><path fill="currentColor" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/></symbol>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html" class="logo" aria-label="Telic home"><svg><use href="#mark"/></svg><span>Telic</span></a>
+    <nav class="nav__links" aria-label="Main"><a href="index.html#watch">Live demo</a><a href="product.html">Product</a><a href="use-cases.html" class="active" aria-current="page">Use cases</a><a href="pricing.html">Pricing</a></nav>
+    <div class="nav__cta">
+      <a href="contact.html" class="btn btn--primary magnetic">Show us a workflow <span class="arrow">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile"><a href="index.html#watch">Live demo</a><a href="product.html">Product</a><a href="use-cases.html">Use cases</a><a href="pricing.html">Pricing</a><a href="contact.html">Show us a workflow</a></nav>
+
+<main id="top">
+
+<!-- ============================== PAGE HERO ============================== -->
+<section class="page-hero">
+  <svg class="page-hero__mark" aria-hidden="true" data-speed="-0.12"><use href="#mark"/></svg>
+  <div class="wrap">
+    <div class="crumbs"><span>Telic</span><span>/</span><span>Use cases</span></div>
+    <h1 class="split">Made for software <em>nobody loves.</em></h1>
+    <div class="page-hero__row">
+      <p class="lead">The best first workflow is high-volume, follows a clear set of rules, and lives in software that was never built to be automated. Here's what that looks like in practice.</p>
+      <div class="chips"><span>High volume</span><span>Clear rules</span><span>Few exceptions</span><span>No API needed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== EXPLORER ============================== -->
+<section class="section section--tight" id="workflows">
+  <div class="wrap">
+    <div class="explorer reveal" id="explorer">
+      <div class="explorer__list" role="tablist" aria-label="Workflows">
+        <button class="active" data-wf="0" role="tab" aria-selected="true"><span>01</span>Invoice entry</button>
+        <button data-wf="1" role="tab" aria-selected="false"><span>02</span>Claims capture</button>
+        <button data-wf="2" role="tab" aria-selected="false"><span>03</span>Order processing</button>
+        <button data-wf="3" role="tab" aria-selected="false"><span>04</span>Document checks</button>
+        <button data-wf="4" role="tab" aria-selected="false"><span>05</span>Reconciliation</button>
+        <button data-wf="5" role="tab" aria-selected="false"><span>06</span>Vendor onboarding</button>
+      </div>
+      <div class="explorer__panel" aria-live="polite">
+        <div class="explorer__head">
+          <div><h3 id="wfName">Invoice entry</h3><p id="wfBlurb"></p></div>
+          <div class="explorer__sys" id="wfSys"></div>
+        </div>
+        <ol class="pipe" id="wfPipe"></ol>
+        <div class="explorer__foot" id="wfFoot"></div>
+      </div>
+    </div>
+    <p class="footnote">Example flows. Every deployment is mapped with the people who do the job today.</p>
+  </div>
+</section>
+
+<!-- ============================== FIT CHECK ============================== -->
+<section class="section section--tight" id="fit">
+  <div class="wrap">
+    <div class="fit" data-reveal>
+      <div class="fit__q">
+        <span class="eyebrow">30-second fit check</span>
+        <h2 class="split">Is your workflow <em>a good first one?</em></h2>
+        <p class="lead">Five honest questions. We'd rather tell you now if it isn't.</p>
+        <ol class="fit__list" id="fitList">
+          <li><span>Does the work happen in desktop apps, portals or spreadsheets?</span><div class="yn"><button data-v="1">Yes</button><button data-v="0">Not really</button></div></li>
+          <li><span>Is it high-volume — hundreds of cases a month or more?</span><div class="yn"><button data-v="1">Yes</button><button data-v="0">Not really</button></div></li>
+          <li><span>Could someone explain the rules in under an hour?</span><div class="yn"><button data-v="1">Yes</button><button data-v="0">Not really</button></div></li>
+          <li><span>Are most cases routine, with a minority of exceptions?</span><div class="yn"><button data-v="1">Yes</button><button data-v="0">Not really</button></div></li>
+          <li><span>Is a person doing it by hand today?</span><div class="yn"><button data-v="1">Yes</button><button data-v="0">Not really</button></div></li>
+        </ol>
+      </div>
+      <div class="fit__a" aria-live="polite">
+        <svg class="fit__dial" viewBox="0 0 200 120" aria-hidden="true"><path class="fd-bg" d="M20 110 A80 80 0 0 1 180 110"/><path class="fd-fg" id="fitArc" pathLength="1" d="M20 110 A80 80 0 0 1 180 110"/></svg>
+        <div class="fit__score"><b id="fitScore">0</b><span>/5</span></div>
+        <h3 id="fitTitle">Answer the questions</h3>
+        <p id="fitText">Your result appears here as you go.</p>
+        <a class="btn btn--light magnetic" id="fitCta" href="contact.html">Tell us about it <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============================== SOFTWARE WALL ============================== -->
+<section class="section" id="where">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">Where it runs</span><h2 class="split">If a person can do it on a screen, <em>Telic can learn it.</em></h2></div>
+      <p class="lead">No integration project and nothing to replace. Telic works the same screens your team works today.</p>
+    </div>
+    <div class="wall">
+      <div class="brick reveal"><b>The ERP from 2006</b><span>Windows desktop apps with no API and no plans for one</span></div>
+      <div class="brick reveal" style="--d:.05s"><b>SAP GUI</b><span>The transaction screens your team knows by heart</span></div>
+      <div class="brick reveal" style="--d:.1s"><b>The Java app</b><span>The one IT would rather nobody touched</span></div>
+      <div class="brick reveal"><b>Client portals</b><span>A different login, layout and quirk for every client</span></div>
+      <div class="brick reveal" style="--d:.05s"><b>Excel, 40 tabs deep</b><span>The spreadsheet that quietly runs the department</span></div>
+      <div class="brick reveal" style="--d:.1s"><b>PDFs in the inbox</b><span>Invoices, claims, forms and scans of all of the above</span></div>
+      <div class="brick brick--ink reveal"><b>And the modern bits</b><span>Trigger it from APIs, webhooks, n8n or Zapier</span></div>
+      <div class="brick brick--ink reveal" style="--d:.05s"><b>On your machines</b><span>Runs where the work runs. Private cloud or on-prem if you need it.</span></div>
+      <div class="brick brick--ink reveal" style="--d:.1s"><b>Any AI model</b><span>The best one for each step. No lock-in.</span></div>
+    </div>
+    <p class="who reveal">Built for <b>BPOs</b>, <b>GCCs</b> and <b>shared-service teams</b> — and for the <b>automation agencies</b> who do this work for them.</p>
+  </div>
+</section>
+
+<!-- ============================== WHO ============================== -->
+<section class="section section--tight" id="who">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">Who it's for</span><h2 class="split">Teams whose day is <em>other people's software.</em></h2></div>
+    </div>
+    <div class="who4">
+      <div class="reveal"><span class="who4__n">BPO</span><h3>BPOs</h3><p>More cases through the same team, fewer SLA misses, and a record of every case for client reviews.</p></div>
+      <div class="reveal" style="--d:.06s"><span class="who4__n">GCC</span><h3>GCCs</h3><p>Automate the repetitive layer of in-house operations without waiting on an integration roadmap.</p></div>
+      <div class="reveal" style="--d:.12s"><span class="who4__n">OPS</span><h3>Shared-service &amp; ops teams</h3><p>Finance, procurement and insurance operations that live between a dozen systems that don't talk.</p></div>
+      <div class="reveal" style="--d:.18s"><span class="who4__n">PTR</span><h3>Automation partners</h3><p>Agencies and RPA consultancies who need the desktop part of a client's workflow to just work — under their own brand.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="wrap">
+    <a class="ctaband reveal" href="contact.html">
+      <svg aria-hidden="true"><use href="#mark"/></svg>
+      <span class="ctaband__t">Show us the job <em>nobody wants.</em></span>
+      <span class="btn btn--light">Start here <span class="arrow">→</span></span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="footer dark" id="footer">
+  <div class="footer__inner">
+    <div class="wrap">
+      <div class="f-top">
+        <div class="f-cta">
+          <span class="eyebrow">Got a job nobody wants?</span><br>
+          <a class="f-mail" href="mailto:daksh@telic.sh" data-cursor="Email">daksh<em>@</em>telic.sh</a>
+        </div>
+        <div class="f-cols">
+          <div><h4>See it</h4><ul><li><a href="index.html#watch">Live demo</a></li><li><a href="product.html">How it works</a></li><li><a href="product.html#receipt">Run receipts</a></li></ul></div>
+          <div><h4>Decide</h4><ul><li><a href="use-cases.html">Use cases</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="pricing.html#faq">Questions</a></li></ul></div>
+          <div><h4>Talk</h4><ul><li><a href="contact.html">Show us a workflow</a></li><li><a href="mailto:daksh@telic.sh">Email us</a></li></ul></div>
+        </div>
+      </div>
+      <div class="f-live"><span><i class="dotlive"></i>India · <b id="fClock">--:--:--</b> IST</span><span>Since you opened this page, a person keying invoices would be on keystroke <b id="fKeys">0</b></span></div>
+      <div class="f-giant" aria-hidden="true">
+        <svg viewBox="-40 -40 402 402" id="fMark" data-cursor="Run"><path class="fg-outline" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/><circle class="fg-node" cx="41" cy="41" r="25"/><circle class="fg-node" cx="161" cy="41" r="25"/><circle class="fg-node" cx="281" cy="41" r="25"/><circle class="fg-node" cx="161" cy="161" r="22"/><circle class="fg-node" cx="161" cy="281" r="25"/></svg>
+        <div class="f-word pre" id="fWord"><span>T</span><span>e</span><span>l</span><span>i</span><span>c</span></div>
+      </div>
+      <div class="f-bottom"><span>© <span id="yr">2026</span> Telic · telic.sh</span><span>An AI operator for the back office</span><button class="totop" id="toTop" type="button">Back to top ↑</button></div>
+    </div>
+  </div>
+</footer>
+
+<div class="fontpick" id="fontpick" role="group" aria-label="Preview headline font">
+  <span>Headline font</span>
+  <button data-font="a">Instrument Serif</button><button data-font="b">Fraunces</button><button data-font="c">Bricolage</button>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>

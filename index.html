@@ -1,129 +1,357 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Telic automates high-volume business workflows that combine repeatable work with changing information, decisions, and exceptions.">
-  <title>Telic — Automation for real-world business workflows</title>
-  <link rel="stylesheet" href="styles.css?v=10">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telic — Your team shouldn't be the API</title>
+<meta name="description" content="Telic is an AI operator for legacy business software. It learns a back-office job by doing it, remembers every step that worked, and only thinks when something is new.">
+<meta name="theme-color" content="#f3ecdf">
+<meta property="og:title" content="Telic — Your team shouldn't be the API">
+<meta property="og:description" content="Telic is an AI operator for legacy business software. It learns a back-office job by doing it, remembers every step that worked, and only thinks when something is new.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>try{var f=localStorage.getItem("telic-font");if(f)document.documentElement.dataset.font=f;if(sessionStorage.getItem("telic-seen")==="1")document.documentElement.classList.add("seen")}catch(e){}</script>
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="index.html" aria-label="Telic home"><span class="brand-mark" aria-hidden="true"></span>telic</a>
-      <div class="nav-links">
-        
-        <div class="solutions">
-          <button class="solutions-trigger" type="button" aria-expanded="false">Solutions <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-          <div class="solutions-menu">
-            <a class="solution-link" href="solution-bpo.html"><span class="solution-icon">01</span><span><strong>BPOs</strong><small>Increase throughput across client delivery operations.</small></span></a>
-            <a class="solution-link" href="solution-enterprise-gcc.html"><span class="solution-icon">02</span><span><strong>Enterprise operations &amp; GCCs</strong><small>Scale recurring work across enterprise and GCC operations.</small></span></a>
-            <a class="solution-link" href="solution-agencies.html"><span class="solution-icon">03</span><span><strong>Automation agencies &amp; RPA consultancies</strong><small>Deliver more customer workflows with Telic.</small></span></a>
-          </div>
-        </div>
-        <a class="nav-link" href="how-it-works.html">How it works</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </div>
-      <a class="button button-coral nav-cta" href="contact.html#demo">Book a demo <span aria-hidden="true">↗</span></a>
-      <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M3 5.5h14M3 10h14M3 14.5h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
-    </nav>
-  </header>
+<body data-page="home">
 
-  <main>
-    <section class="hero">
-      <div class="hero-grid shell">
-        <div class="hero-copy">
-          <div class="eyebrow">Automation for real-world business workflows</div>
-          <h1>Complete more work with less manual effort.</h1>
-          <p class="lede">Telic automates high-volume workflows that follow a familiar process—but still involve changing information, messy documents, decisions, and exceptions.</p>
-          <div class="hero-actions"><a class="button button-coral" href="contact.html#demo">Book a demo <span>↗</span></a><a class="button button-ghost" href="how-it-works.html">See how Telic works</a></div>
-        </div>
-        <div class="hero-runtime" aria-label="Telic directing a purchase order workflow inside a business application">
-          <div class="runtime-split">
-            <div class="business-app">
-              <div class="visual-label"><i></i>BUSINESS APPLICATION</div>
-              <div class="app-chrome"><span>Operations Suite</span><span>— □ ×</span></div>
-              <div class="app-layout"><aside><b>OS</b><span>Orders</span><span>Customers</span><span>Inventory</span><span>Reports</span></aside><div class="app-workspace"><div class="app-title"><div><small>ORDER ENTRY</small><strong>New purchase order</strong></div><span>Draft</span></div><div class="app-fields"><label data-hero-step="0">Customer<b>Northstar Supplies</b><em>Current action</em></label><label data-hero-step="1">Reference<b>PO-73918</b><em>Current action</em></label><label class="wide" data-hero-step="2">Product<b>Valve assembly · pack 25</b><em>Current action</em></label><label data-hero-step="2">Quantity<b>4</b></label><label>Delivery<b>Warehouse B</b></label></div><div class="app-table" data-hero-step="3"><span>ITEM</span><span>QTY</span><span>STATUS</span><b>Valve assembly</b><b>4</b><b>Ready to submit</b><em>Verifying result</em></div></div></div>
+<div class="preloader" aria-hidden="true">
+  <svg class="pl-mark" viewBox="-40 -40 402 402">
+    <defs><filter id="plGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+    <path class="pl-solid" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/>
+    <path class="pl-outline" pathLength="1" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/>
+    <circle class="pl-ring" cx="161" cy="161" r="22"/>
+    <circle class="pl-node" cx="41" cy="41" r="22"/><circle class="pl-node" cx="161" cy="41" r="22"/><circle class="pl-node" cx="281" cy="41" r="22"/><circle class="pl-node" cx="161" cy="281" r="22"/><circle class="pl-node ai" cx="161" cy="161" r="19"/>
+    <circle class="pl-tip" r="5" cx="-100" cy="-100"/>
+  </svg>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 322 322"><path fill="currentColor" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z M 160.95 186.39 C 146.81 186.39 135.35 174.93 135.35 160.8 C 135.35 146.66 146.81 135.2 160.95 135.2 C 175.08 135.2 186.54 146.66 186.54 160.8 C 186.54 174.93 175.08 186.39 160.95 186.39 Z M 160.95 186.39"/></symbol>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html" class="logo" aria-label="Telic home"><svg><use href="#mark"/></svg><span>Telic</span></a>
+    <nav class="nav__links" aria-label="Main"><a href="index.html#watch">Live demo</a><a href="product.html">Product</a><a href="use-cases.html">Use cases</a><a href="pricing.html">Pricing</a></nav>
+    <div class="nav__cta">
+      <a href="contact.html" class="btn btn--primary magnetic">Show us a workflow <span class="arrow">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile"><a href="index.html#watch">Live demo</a><a href="product.html">Product</a><a href="use-cases.html">Use cases</a><a href="pricing.html">Pricing</a><a href="contact.html">Show us a workflow</a></nav>
+
+<main id="top">
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="hero">
+  <div class="hero__blob" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="badge" data-reveal><b>Pilots open</b> For BPOs and shared-service teams in India</span>
+      <h1 class="split hero__h">Your team shouldn't be <em>the API.</em></h1>
+      <p class="lead" data-reveal data-delay="250">Most back-office work is people carrying data between systems that can't talk to each other. Telic is an AI operator that does the carrying — in the old ERP, the client portal, the 40-tab spreadsheet — and passes your people only the parts that need a person.</p>
+      <div class="hero__ctas" data-reveal data-delay="400">
+        <a href="#watch" class="btn btn--primary magnetic" data-cursor="Watch">Watch it do the job <span class="arrow">↓</span></a>
+        <a href="contact.html" class="btn btn--ghost magnetic">Show us a workflow</a>
+      </div>
+    </div>
+
+    <div class="viz" id="heroViz" aria-hidden="true">
+      <svg viewBox="-40 -40 402 402">
+        <path class="outline" id="vizOutline" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/>
+        <circle class="pulse" id="vizPulse" cx="161" cy="161" r="26"/>
+        <circle class="node" cx="41" cy="41" r="25"/>
+        <circle class="node" cx="161" cy="41" r="25"/>
+        <circle class="node" cx="281" cy="41" r="25"/>
+        <circle class="node ai" cx="161" cy="161" r="22"/>
+        <circle class="node" cx="161" cy="281" r="25"/>
+      </svg>
+      <div class="viz-label" style="left:13%;top:3%"><span class="tick">01</span>Read invoice</div>
+      <div class="viz-label" style="left:50%;top:3%"><span class="tick">02</span>Find supplier</div>
+      <div class="viz-label" style="left:87%;top:3%"><span class="tick">03</span>Fill the ERP</div>
+      <div class="viz-label ai" style="left:22%;top:50%"><span class="tick">04</span>AI: needs approval?</div>
+      <div class="viz-label" style="left:78%;top:80%"><span class="tick">05</span>Post &amp; verify</div>
+      <div class="viz-status"><span>Understanding</span><span>Executing</span><span>Verifying</span><span>Done</span></div>
+    </div>
+  </div>
+  <div class="keys" id="keys" aria-hidden="true"></div>
+  <div class="keys-caption wrap" aria-hidden="true"><span>Ctrl C · Alt Tab · Ctrl V · Tab · Enter · repeat</span><span>— the job today, a few thousand times a day</span></div>
+</section>
+
+<!-- ============================== MANIFESTO ============================== -->
+<section class="section manifesto-sec">
+  <div class="wrap">
+    <span class="eyebrow">Right now, somewhere</span>
+    <p class="manifesto">Someone is copying an invoice number out of a PDF and into a screen built in 2006. Then the date. Then the amount. Then the next one, four thousand times a month. <em>Telic does that part</em> — and leaves them the work that actually needs a person.</p>
+  </div>
+</section>
+
+<!-- ============================== WATCH ============================== -->
+<section class="section dark" id="watch">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div><span class="eyebrow">Live demo</span><h2 class="split">Here's an invoice. Here's a <em>2006-era</em> ERP. No API in sight.</h2></div>
+      <p class="lead">Press play and watch Telic do the job a person does today: read the PDF, find the supplier, key it in, decide on approval, post it, check it saved. Then try the harder versions.</p>
+    </div>
+
+    <div class="scenarios reveal" role="tablist" aria-label="Demo scenarios">
+      <button class="scenario active" data-scn="learn" role="tab" aria-selected="true"><span class="num">A</span><span>Day one<small>It works the job out</small></span></button>
+      <button class="scenario" data-scn="repeat" role="tab" aria-selected="false"><span class="num">B</span><span>Day two<small>It remembers</small></span></button>
+      <button class="scenario" data-scn="popup" role="tab" aria-selected="false"><span class="num">C</span><span>Surprise popup<small>Something changed</small></span></button>
+      <button class="scenario" data-scn="human" role="tab" aria-selected="false"><span class="num">D</span><span>Not sure<small>It asks you</small></span></button>
+    </div>
+
+    <div class="desk-stage"><div class="desktop" id="desk">
+      <div class="desktop__bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span>AP-Desk-07 · Windows workstation</span>
+        <span>Telic agent connected ●</span>
+      </div>
+      <div class="desktop__body">
+        <!-- source document -->
+        <div class="doc-pane">
+          <div class="pane-title"><span>Inbox · PDF</span><span>1 of 1</span></div>
+          <div class="invoice" id="invoice">
+            <div class="scan" id="scan"></div>
+            <div class="ihead">
+              <div><b data-hl="supplier">Northstar Supplies Pvt Ltd</b>Plot 14, MIDC Bhosari, Pune<br>GSTIN 27AAACN4821K1Z5</div>
+              <span class="itag">TAX INVOICE</span>
             </div>
-            <div class="control-link"><span>→</span><small>DIRECTS<br>AND CHECKS</small></div>
-            <div class="telic-control">
-              <div class="visual-label"><i></i>TELIC CONTROL</div>
-              <div class="control-head"><div><small>ORDER ENTRY · RUN 0284</small><strong>Executing the defined workflow</strong></div><span>LIVE</span></div>
-              <div class="control-flow"><div class="control-step" data-hero-step="0"><i>1</i><span><b>Find customer</b><small>Open the correct account</small></span></div><div class="flow-line"></div><div class="control-step" data-hero-step="1"><i>2</i><span><b>Create order</b><small>Enter the order reference</small></span></div><div class="flow-line"></div><div class="control-step" data-hero-step="2"><i>3</i><span><b>Add line item</b><small>Enter product and quantity</small></span></div><div class="flow-line"></div><div class="control-step" data-hero-step="3"><i>4</i><span><b>Submit and verify</b><small>Confirm the order was created</small></span></div></div>
-              <div class="control-status"><span class="status-eye">◎</span><div><small>EXECUTING IN APPLICATION</small><strong data-hero-status>Finding the customer account</strong></div></div>
+            <div>Invoice no: <span data-hl="invno">NS/24-25/0812</span><br>Date: <span data-hl="date">21-10-2026</span><br>Bill to: Meridian Retail Ltd</div>
+            <table>
+              <thead><tr><th>Item</th><th>Qty</th><th>Amount</th></tr></thead>
+              <tbody data-hl="lines">
+                <tr><td>Corrugated boxes (L)</td><td>1,200</td><td>54,000</td></tr>
+                <tr><td>Packing tape 48mm</td><td>600</td><td>21,600</td></tr>
+                <tr><td>Stretch film roll</td><td>240</td><td>79,200</td></tr>
+              </tbody>
+            </table>
+            <div class="itotal"><span>Total (incl. GST)</span><span data-hl="total">₹1,82,664</span></div>
+          </div>
+          <div class="doc-meta">
+            <b>Task:</b> “Post this invoice to TradeDesk and check if it needs approval.”<br>
+            <span>That's the whole instruction.</span>
+          </div>
+        </div>
+
+        <!-- legacy ERP -->
+        <div class="erp-pane" id="erpPane">
+          <div class="erp" id="erp">
+            <div class="erp__title"><span>TradeDesk ERP 6.2 — Accounts Payable [Supplier Invoice]</span><span class="wbtns"><i></i><i></i><i></i></span></div>
+            <div class="erp__menu"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span><u>R</u>ecords</span><span><u>T</u>ools</span><span><u>H</u>elp</span></div>
+            <div class="erp__body">
+              <fieldset>
+                <legend>Supplier</legend>
+                <div class="row">
+                  <label>Supplier ID</label><div class="inp" data-f="sid"></div>
+                  <label>Name</label><div class="inp" data-f="sname"></div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Invoice</legend>
+                <div class="row">
+                  <label>Invoice No.</label><div class="inp" data-f="invno"></div>
+                  <label>Date</label><div class="inp" data-f="date"></div>
+                  <label>Total (INR)</label><div class="inp" data-f="total"></div>
+                  <label>Duplicate?</label><div class="inp" data-f="dup"></div>
+                </div>
+              </fieldset>
+              <div class="grid" id="grid">
+                <div class="gh"><span>Description</span><span>Qty</span><span>Rate</span><span>Amount</span></div>
+              </div>
+              <div class="actions">
+                <span class="chk" id="apprChk"><i></i> Route for manager approval</span>
+                <div style="display:flex;gap:6px"><span class="wbtn">Cancel</span><span class="wbtn" id="postBtn"><u>P</u>ost</span></div>
+              </div>
+            </div>
+            <div class="erp__status"><span id="erpStatus">Ready</span><span>AP01</span><span>NUM</span></div>
+
+            <div class="erp-posted" id="posted"><div class="stamp">POSTED ✓ AP-77341</div></div>
+
+            <div class="win-modal" id="popup">
+              <div class="dlg">
+                <div class="erp__title"><span>TradeDesk Updater</span><span class="wbtns"><i></i></span></div>
+                <div class="dlg__body"><div class="icon">i</div><div><b>Application update available</b><br>Version 6.3 is ready to install. Restart TradeDesk now?</div></div>
+                <div class="dlg__btns"><span class="wbtn">Restart now</span><span class="wbtn" id="remindBtn">Remind me later</span><span class="wbtn">View changes</span></div>
+              </div>
+            </div>
+
+            <div class="win-modal" id="pickModal">
+              <div class="dlg">
+                <div class="erp__title"><span>Supplier Lookup — 2 matches</span><span class="wbtns"><i></i></span></div>
+                <div class="dlg__body"><div class="icon warn">!</div><div style="flex:1">More than one supplier matches “Northstar Supplies”.
+                  <div class="pick" id="pickList">
+                    <button data-v="V-2048|Northstar Supplies Pvt Ltd" disabled>V-2048 · Northstar Supplies Pvt Ltd · Pune · GST 27AAACN4821K1Z5</button>
+                    <button data-v="V-3117|Northstar Supplies & Co" disabled>V-3117 · Northstar Supplies &amp; Co · Mumbai · GST pending</button>
+                  </div></div></div>
+                <div class="dlg__btns"><span class="wbtn">Cancel</span></div>
+              </div>
             </div>
           </div>
+          <div class="ghost" id="ghost"><svg width="20" height="22" viewBox="0 0 20 22"><path d="M2 1l15 11-6.5 1.2L14 20l-3 1.4-3.4-6.9L2 18.5z" fill="#fff" stroke="#000" stroke-width="1.2"/></svg></div>
         </div>
-      </div>
-    </section>
 
-    <section class="section cream-section" id="live-execution">
-      <div class="shell">
-        <div class="section-heading"><div><div class="eyebrow">What Telic does</div><h2>Routine when it can be. Thoughtful when it needs to be.</h2></div><p class="section-copy">Telic carries out recurring work across the software your teams already use. Familiar steps become faster and more efficient over time. When information is unclear or something unexpected appears, Telic focuses intelligence on that moment—or asks a person.</p></div>
-        <div class="execution-layout">
-          <div class="rpa-comparison" aria-label="Comparison of brittle RPA and Telic handling the same application change">
-            <div class="comparison-head"><span>SAME WORKFLOW</span><strong>The product screen changes unexpectedly</strong></div>
-            <div class="comparison-lanes">
-              <article class="comparison-lane rpa-lane"><div class="lane-title"><span>TRADITIONAL RPA</span><strong>Fixed path breaks</strong></div><div class="lane-app"><div class="lane-appbar">Operations Suite <span>Product search</span></div><div class="screen-change"><span>NEW</span><strong>Choose a product variant</strong><small>An extra selection screen appeared.</small></div></div><div class="path-stack"><div class="path-node done"><i>✓</i><span>Open order</span></div><div class="path-connector"></div><div class="path-node failed"><i>×</i><span>Click saved selector</span><b>ELEMENT NOT FOUND</b></div><div class="path-connector muted"></div><div class="path-node muted"><i>3</i><span>Submit order</span></div></div><div class="lane-outcome failed"><i>!</i><span><b>Workflow stopped</b><small>Rule or selector must be rebuilt.</small></span></div></article>
-              <article class="comparison-lane telic-lane"><div class="lane-title"><span>TELIC</span><strong>Understands, resolves, continues</strong></div><div class="lane-app"><div class="lane-appbar">Operations Suite <span>Product search</span></div><div class="screen-change resolved"><span>RESOLVED</span><strong>Valve assembly · pack 25</strong><small>Matched using order and product context.</small></div></div><div class="path-stack"><div class="path-node done"><i>✓</i><span>Reuse known actions</span></div><div class="path-connector done"></div><div class="path-node adapt"><i>✦</i><span>Interpret changed screen</span><b>AI USED HERE</b></div><div class="path-connector done"></div><div class="path-node done"><i>✓</i><span>Resume and verify</span></div></div><div class="lane-outcome success"><i>✓</i><span><b>Workflow completed</b><small>The new recovery can be reused next time.</small></span></div></article>
-            </div>
+        <!-- Telic console -->
+        <aside class="console" aria-live="polite">
+          <div class="console__head">
+            <div class="row1"><span class="logo"><svg><use href="#mark"/></svg><span>Telic</span></span><span class="state" id="state"><i></i>Idle</span></div>
+            <div class="console__task">Workflow: <b>Supplier invoice → TradeDesk</b></div>
           </div>
-          <div class="benefit-list">
-            <article class="benefit-card"><span class="benefit-icon">01</span><div><h3>Handles the repeatable work</h3><p>Telic completes the familiar, high-volume steps that consume operating time every day.</p></div></article>
-            <article class="benefit-card"><span class="benefit-icon">02</span><div><h3>Reasons at the difficult moments</h3><p>Unclear documents, mismatched records, and routine exceptions do not have to stop the process.</p></div></article>
-            <article class="benefit-card"><span class="benefit-icon">03</span><div><h3>Gets more efficient with repetition</h3><p>Proven ways of completing familiar work are reused, reducing AI processing on every run.</p></div></article>
-            <article class="benefit-card"><span class="benefit-icon">04</span><div><h3>Keeps people in control</h3><p>Teams can review, guide, or take over whenever a decision should remain human.</p></div></article>
+          <ol class="steps" id="steps"></ol>
+          <div class="takeover" id="takeover">
+            <button class="btn btn--amber" id="takeBtn">Take over</button>
+            <button class="btn btn--ghost" id="handBtn" disabled>Hand back</button>
           </div>
+          <div class="meters">
+            <div class="meter ai"><small>AI calls</small><b id="mAI">0</b></div>
+            <div class="meter"><small>From memory</small><b id="mMem">0</b></div>
+            <div class="meter"><small>Time</small><b id="mTime">0.0s</b></div>
+          </div>
+          <div class="log" id="log"><div>Ready. Press play.</div></div>
+        </aside>
+      </div>
+    </div>
+
+
+    </div><!-- /desk-stage -->
+    <div class="demo-foot reveal">
+      <div class="legend">
+        <span><i class="l-ai"></i>Thinking (AI)</span>
+        <span><i class="l-mem"></i>Remembered</span>
+        <span><i class="l-human"></i>Your call</span>
+      </div>
+      <button class="btn btn--light magnetic" id="runBtn" data-cursor="Play">▶ Play</button>
+    </div>
+    <div class="demo-explain reveal" id="explain">
+      <div data-scn="learn"><b>A · Day one</b>Telic has only been told the goal and the rules. It reasons through each step, checks every result, and keeps what worked.</div>
+      <div data-scn="repeat"><b>B · Day two</b>A new invoice. Known steps replay from memory in a blink. It still thinks about the new PDF and the approval call.</div>
+      <div data-scn="popup"><b>C · Surprise popup</b>An update dialog gets in the way. Telic stops before doing damage, works out that one step, and remembers the fix.</div>
+      <div data-scn="human"><b>D · Not sure</b>Two suppliers look right. Telic won't guess. You take the mouse, pick one, hand it back — it carries on.</div>
+    </div>
+    <p class="footnote" style="text-align:center">A simulation of a real Telic workflow. The supplier, invoice and ERP are made up.</p>
+  </div>
+</section>
+
+<!-- ============================== DIFFERENT (stacking cards) ============================== -->
+<section class="section dark" id="different">
+  <div class="wrap">
+    <div class="split-head">
+      <div><span class="eyebrow" data-reveal>Why it's different</span><h2 class="split">Three things a script can't do <em>and an agent won't.</em></h2></div>
+      <p class="lead" data-reveal>Scripts are cheap until something changes. AI agents adapt, but they rethink every click and leave you guessing why they did what they did. Telic is built for the gap in between.</p>
+    </div>
+    <div class="stack">
+      <a class="stack-card" href="product.html" data-cursor="Open">
+        <div class="sc-viz sc-viz--dark"><div class="minibar" data-minibar></div></div>
+        <div class="sc-body">
+          <span class="sc-n">01 / 03</span>
+          <div><h3>It remembers.</h3><p>It works a step out once, then replays it. Thinking is saved for what's actually new — so the thousandth case is faster and cheaper than the first.</p></div>
+          <div class="chain"><div><b>First run</b>Every step reasoned through and checked</div><div><b>After that</b>Routine steps replay from memory</div><div><b>When it changes</b>Only that one step is re-learned</div></div>
+        </div>
+      </a>
+      <a class="stack-card" href="product.html#sideways" data-cursor="Open">
+        <div class="sc-viz"><div class="sw__stage st-dupe">
+          <div class="drow r1"><b>V-2048</b> Northstar Supplies Pvt Ltd · Pune</div>
+          <div class="drow r2"><b>V-3117</b> Northstar Supplies &amp; Co · Mumbai</div>
+          <span class="sw__tag t-human">Asking a person</span><span class="sw__tag t-ink">Resumed</span>
+        </div></div>
+        <div class="sc-body">
+          <span class="sc-n">02 / 03</span>
+          <div><h3>It asks when it isn't sure.</h3><p>No guessing on the cases that matter. It pauses safely, a person decides, and it carries on from exactly where it stopped.</p></div>
+          <div class="chain"><div><b>Pause</b>Nothing is clicked on a hunch</div><div><b>Take over</b>Anyone can grab the mouse from a live view</div><div><b>Hand back</b>Telic checks the result and resumes</div></div>
+        </div>
+      </a>
+      <a class="stack-card" href="product.html#receipt" data-cursor="Open">
+        <div class="sc-viz sc-viz--dark reveal"><div class="minireceipt">
+          <div><span>READ invoice</span><em class="ai">AI</em></div><div><span>FIND supplier</span><em>MEM</em></div><div><span>ENTER lines</span><em>MEM</em></div><div><span>DECIDE approval</span><em class="ai">AI</em></div><div><span>APPROVE</span><em class="hm">PERSON</em></div><div><span>POST + VERIFY</span><em>✓</em></div>
+        </div></div>
+        <div class="sc-body">
+          <span class="sc-n">03 / 03</span>
+          <div><h3>It shows its work.</h3><p>Every run leaves a receipt: each click, each screen, each decision and who made it. Something you can hand to an auditor — or a client.</p></div>
+          <div class="chain"><div><b>Screens</b>Before and after every step</div><div><b>Decisions</b>What the AI chose, and why</div><div><b>People</b>Who stepped in, and when</div></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== HOURS BAND ============================== -->
+<section class="hours" id="hours">
+  <div class="wrap hours__inner">
+    <div class="hours__num" data-reveal><span class="odo" data-odo="300">300</span><small>hours</small></div>
+    <div class="hours__copy" data-reveal data-delay="150">
+      <p>One workflow. 3,000 cases a month. Six minutes of keying each. That's <b>300 hours</b> of someone's month spent moving data between screens.</p>
+      <a href="pricing.html#math" class="btn btn--primary magnetic">Work out yours <span class="arrow">→</span></a> <a href="use-cases.html#fit" class="btn btn--ghost magnetic">Is my workflow a fit? <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MARQUEE ============================== -->
+<div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Invoices</span><span>Claims</span><span>Orders</span><span>Reconciliations</span><span>Vendor forms</span><span>Document checks</span><span>Invoices</span><span>Claims</span><span>Orders</span><span>Reconciliations</span><span>Vendor forms</span><span>Document checks</span></div></div>
+
+<!-- ============================== HORIZONTAL: SOFTWARE ============================== -->
+<section class="hscroll" id="where-teaser">
+  <div class="hscroll-sticky">
+    <div class="hscroll-track">
+      <div class="hc-intro">
+        <span class="eyebrow">Where it runs</span>
+        <h2 class="split">Made for software <em>nobody loves.</em></h2>
+        <p class="lead">If a person can do it on a screen, Telic can learn it. Keep scrolling.</p>
+        <a href="use-cases.html" class="btn btn--ghost magnetic">See the use cases <span class="arrow">→</span></a>
+      </div>
+      <div class="hcard"><span class="hc-n">01</span><div class="hc-art art-erp"><i></i><i></i><i></i><i></i></div><h3>The ERP from 2006</h3><p>Windows desktop apps with no API and no plans for one.</p></div>
+      <div class="hcard"><span class="hc-n">02</span><div class="hc-art art-sap"><i></i><i></i><i></i></div><h3>SAP GUI</h3><p>The transaction screens your team knows by heart.</p></div>
+      <div class="hcard"><span class="hc-n">03</span><div class="hc-art art-java"><i></i><i></i></div><h3>The Java app</h3><p>The one IT would rather nobody touched.</p></div>
+      <div class="hcard"><span class="hc-n">04</span><div class="hc-art art-portal"><i></i><i></i><i></i></div><h3>Client portals</h3><p>A different login, layout and quirk for every client.</p></div>
+      <div class="hcard"><span class="hc-n">05</span><div class="hc-art art-xls"><i></i></div><h3>Excel, 40 tabs deep</h3><p>The spreadsheet that quietly runs the department.</p></div>
+      <div class="hcard"><span class="hc-n">06</span><div class="hc-art art-pdf"><i></i><i></i></div><h3>PDFs in the inbox</h3><p>Invoices, claims, forms — and scans of all of the above.</p></div>
+      <div class="hcard hcard--ink"><span class="hc-n">07</span><div class="hc-art art-api"><i></i><i></i><i></i></div><h3>And the modern bits</h3><p>Trigger runs from APIs, webhooks, n8n or Zapier.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="wrap">
+    <a class="ctaband reveal" href="contact.html">
+      <svg aria-hidden="true"><use href="#mark"/></svg>
+      <span class="ctaband__t">Show us the job <em>nobody wants.</em></span>
+      <span class="btn btn--light">Start here <span class="arrow">→</span></span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="footer dark" id="footer">
+  <div class="footer__inner">
+    <div class="wrap">
+      <div class="f-top">
+        <div class="f-cta">
+          <span class="eyebrow">Got a job nobody wants?</span><br>
+          <a class="f-mail" href="mailto:daksh@telic.sh" data-cursor="Email">daksh<em>@</em>telic.sh</a>
+        </div>
+        <div class="f-cols">
+          <div><h4>See it</h4><ul><li><a href="index.html#watch">Live demo</a></li><li><a href="product.html">How it works</a></li><li><a href="product.html#receipt">Run receipts</a></li></ul></div>
+          <div><h4>Decide</h4><ul><li><a href="use-cases.html">Use cases</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="pricing.html#faq">Questions</a></li></ul></div>
+          <div><h4>Talk</h4><ul><li><a href="contact.html">Show us a workflow</a></li><li><a href="mailto:daksh@telic.sh">Email us</a></li></ul></div>
         </div>
       </div>
-    </section>
-
-    <section class="section dark-section">
-      <div class="shell">
-        <div class="section-heading"><div><div class="eyebrow">Why Telic</div><h2>Built between rigid bots and AI that rethinks every step.</h2></div><p class="section-copy dark">Most operational workflows are neither perfectly predictable nor fully open-ended. Telic is designed for work with a stable core and a smaller number of moments that need interpretation, adaptation, or review.</p></div>
-        <div class="difference-grid">
-          <article class="difference-card"><span class="difference-index">01 · MANUAL WORK</span><h3>Flexible, but difficult to scale</h3><p>People handle variation well, but volume brings more hiring, training, supervision, and cost.</p><div class="difference-fit">Best for highly judgment-based work</div></article>
-          <article class="difference-card"><span class="difference-index">02 · TRADITIONAL AUTOMATION</span><h3>Efficient until the path changes</h3><p>Fixed automation cannot reason through unfamiliar screens or unstructured information, so exceptions and updates create maintenance work.</p><div class="difference-fit">Best for completely fixed processes</div></article>
-          <article class="difference-card"><span class="difference-index">03 · GENERAL AI AGENTS</span><h3>Capable, but costly at volume</h3><p>Paying for AI to reason through every routine action makes repeated, high-volume execution unnecessarily expensive.</p><div class="difference-fit">Best for one-off, exploratory tasks</div></article>
-          <article class="difference-card telic"><span class="difference-index">04 · TELIC</span><h3>Efficient on the routine. Intelligent on the variable.</h3><p>Telic reuses proven paths and concentrates AI effort on the parts that genuinely need it.</p><div class="difference-fit">Best for mostly repeatable workflows with real-world variation</div></article>
-        </div>
+      <div class="f-live"><span><i class="dotlive"></i>India · <b id="fClock">--:--:--</b> IST</span><span>Since you opened this page, a person keying invoices would be on keystroke <b id="fKeys">0</b></span></div>
+      <div class="f-giant" aria-hidden="true">
+        <svg viewBox="-40 -40 402 402" id="fMark" data-cursor="Run"><path class="fg-outline" d="M 279.42 0 C 265.57 0 253.27 6.65 245.55 16.93 C 239.69 24.73 230.61 29.46 220.85 29.46 L 219.63 29.46 C 209.83 29.46 200.69 24.73 194.79 16.89 C 187.06 6.63 174.78 0 160.95 0 C 147.12 0 134.84 6.63 127.11 16.89 C 121.21 24.73 112.08 29.46 102.27 29.46 L 101.05 29.46 C 91.29 29.46 82.21 24.73 76.35 16.93 C 68.63 6.65 56.33 0 42.48 0 C 19.11 0 0.3 18.69 0.15 42.06 C 0 65.56 19.01 84.67 42.48 84.67 C 56.31 84.67 68.59 78.04 76.31 67.78 C 82.22 59.94 91.36 55.21 101.17 55.21 L 102.27 55.21 C 112.08 55.21 121.21 59.94 127.11 67.78 C 134.84 78.04 147.12 84.67 160.95 84.67 C 174.78 84.67 187.06 78.04 194.78 67.78 C 200.69 59.94 209.82 55.21 219.63 55.21 L 235.35 55.21 C 237.51 55.21 239.45 56.51 240.28 58.5 L 240.31 58.57 C 241.14 60.56 240.68 62.86 239.15 64.39 L 201.09 102.45 C 190.63 112.9 176.39 118.7 161.6 118.47 C 161.44 118.47 161.27 118.47 161.1 118.47 C 137.76 118.39 118.62 137.45 118.61 160.79 C 118.61 174.64 125.26 186.95 135.55 194.67 C 143.35 200.52 148.07 209.61 148.07 219.36 L 148.07 220.7 C 148.07 230.46 143.35 239.54 135.55 245.4 C 125.27 253.12 118.61 265.41 118.61 279.26 C 118.61 302.63 137.31 321.45 160.67 321.59 C 184.18 321.74 203.28 302.73 203.28 279.26 C 203.28 265.39 196.61 253.08 186.29 245.36 C 178.5 239.52 173.83 230.43 173.83 220.7 L 173.83 219.36 C 173.83 209.63 178.5 200.54 186.29 194.7 C 196.61 186.98 203.28 174.67 203.28 160.8 C 203.28 160.51 203.28 160.21 203.27 159.93 C 202.97 145.21 208.9 131.05 219.31 120.65 L 239.27 100.69 C 249.67 90.29 263.83 84.36 278.54 84.66 C 278.83 84.66 279.12 84.66 279.42 84.66 C 302.89 84.66 321.9 65.56 321.75 42.05 C 321.6 18.69 302.78 0 279.42 0 Z"/><circle class="fg-node" cx="41" cy="41" r="25"/><circle class="fg-node" cx="161" cy="41" r="25"/><circle class="fg-node" cx="281" cy="41" r="25"/><circle class="fg-node" cx="161" cy="161" r="22"/><circle class="fg-node" cx="161" cy="281" r="25"/></svg>
+        <div class="f-word pre" id="fWord"><span>T</span><span>e</span><span>l</span><span>i</span><span>c</span></div>
       </div>
-    </section>
+      <div class="f-bottom"><span>© <span id="yr">2026</span> Telic · telic.sh</span><span>An AI operator for the back office</span><button class="totop" id="toTop" type="button">Back to top ↑</button></div>
+    </div>
+  </div>
+</footer>
 
-    <section class="section cream-section audience-section">
-      <div class="shell">
-        <div class="section-heading"><div><div class="eyebrow">Built for your operating model</div><h2>Different teams. A different reason to choose Telic.</h2></div><p class="section-copy">Select the environment closest to yours to see where Telic fits, what it changes, and how your team stays in control.</p></div>
-        <div class="audience-tabs" role="tablist" aria-label="Customer segments">
-          <button class="audience-tab active" type="button" role="tab" aria-selected="true" aria-controls="audience-bpo" data-audience="bpo"><span>01</span>BPOs</button>
-          <button class="audience-tab" type="button" role="tab" aria-selected="false" aria-controls="audience-enterprise" data-audience="enterprise"><span>02</span>Enterprise operations &amp; GCCs</button>
-          <button class="audience-tab" type="button" role="tab" aria-selected="false" aria-controls="audience-agencies" data-audience="agencies"><span>03</span>Automation agencies &amp; RPA consultancies</button>
-        </div>
-        <div class="audience-panels">
-          <article class="audience-panel active" id="audience-bpo" role="tabpanel" data-audience-panel="bpo"><div class="audience-copy"><span class="audience-kicker">FOR SERVICE OPERATIONS</span><h3>Increase throughput without growing delivery teams at the same rate.</h3><p>Telic executes recurring client work across the applications your teams already use, while handling familiar variation and routing consequential decisions to supervisors.</p><ul><li>Standardize delivery across teams and shifts</li><li>Reduce manual exception queues and training dependence</li><li>Give supervisors live visibility and controlled takeover</li></ul><a class="button button-ink" href="solution-bpo.html">Explore BPO solutions →</a></div><div class="audience-map"><div><small>YOUR PRIORITY</small><strong>More completed work per delivery team</strong></div><span>→</span><div><small>TELIC'S ROLE</small><strong>Execute routine cases and resolve familiar variation</strong></div><span>→</span><div><small>TEAM CONTROL</small><strong>Review exceptions, intervene, and audit outcomes</strong></div></div></article>
-          <article class="audience-panel" id="audience-enterprise" role="tabpanel" data-audience-panel="enterprise" hidden><div class="audience-copy"><span class="audience-kicker">FOR ENTERPRISE OPERATIONS &amp; GCCs</span><h3>Remove recurring manual work without replacing the systems around it.</h3><p>Telic coordinates processes across desktop software, portals, documents, and internal tools while preserving approvals, controls, and ownership within your operation.</p><ul><li>Automate cross-system finance, procurement, and administrative work</li><li>Keep human approval where policy or judgment requires it</li><li>Verify outcomes and preserve a traceable operating history</li></ul><a class="button button-ink" href="solution-enterprise-gcc.html">Explore enterprise &amp; GCC solutions →</a></div><div class="audience-map"><div><small>YOUR PRIORITY</small><strong>Reduce manual handoffs across existing systems</strong></div><span>→</span><div><small>TELIC'S ROLE</small><strong>Carry the defined process from input to verified result</strong></div><span>→</span><div><small>TEAM CONTROL</small><strong>Approve, pause, guide, or take over when needed</strong></div></div></article>
-          <article class="audience-panel" id="audience-agencies" role="tabpanel" data-audience-panel="agencies" hidden><div class="audience-copy"><span class="audience-kicker">FOR AUTOMATION AGENCIES &amp; RPA CONSULTANCIES</span><h3>Deliver automation in environments where brittle scripts stop being enough.</h3><p>Use Telic as the execution foundation beneath your customer solution, so your team can focus on process design, integration, and the business outcome.</p><ul><li>Serve desktop-heavy and mixed application environments</li><li>Reuse delivery patterns instead of rebuilding execution machinery</li><li>Supervise customer workflows and improve them after launch</li></ul><a class="button button-ink" href="solution-agencies.html">Explore agency &amp; consultancy solutions →</a></div><div class="audience-map"><div><small>YOUR PRIORITY</small><strong>Deliver more customer workflows with less custom plumbing</strong></div><span>→</span><div><small>TELIC'S ROLE</small><strong>Provide reusable execution, recovery, and verification</strong></div><span>→</span><div><small>AGENCY CONTROL</small><strong>Own the solution, customer relationship, and operation</strong></div></div></article>
-        </div>
-      </div>
-    </section>
+<div class="fontpick" id="fontpick" role="group" aria-label="Preview headline font">
+  <span>Headline font</span>
+  <button data-font="a">Instrument Serif</button><button data-font="b">Fraunces</button><button data-font="c">Bricolage</button>
+</div>
+<nav class="rail" id="rail" aria-label="Sections"><a href="#hero"><span>Start</span><i></i></a><a href="#watch"><span>Demo</span><i></i></a><a href="#different"><span>Why</span><i></i></a><a href="#hours"><span>Hours</span><i></i></a><a href="#where-teaser"><span>Software</span><i></i></a></nav>
 
-    <section class="section dark-section">
-      <div class="how-grid shell">
-        <div class="how-intro"><div class="eyebrow">How Telic works</div><h2>One defined process. Different kinds of execution.</h2><p class="section-copy dark">Telic separates routine execution from moments that need intelligence, then verifies the result before the workflow moves on.</p><a class="button button-ghost" href="how-it-works.html">Explore the full process →</a></div>
-        <div class="how-steps">
-          <article class="how-step"><span class="how-number">01</span><div><h3>Describe the workflow in natural language</h3><p>Create a plain-language process definition document (PDD) much like you would explain the work to a person. Telic turns the steps, rules, exceptions, and expected results into a structured workflow.</p></div></article>
-          <article class="how-step"><span class="how-number">02</span><div><h3>Run familiar steps efficiently</h3><p>Known and previously verified paths are reused instead of asking an AI model to rediscover every action.</p></div></article>
-          <article class="how-step"><span class="how-number">03</span><div><h3>Use intelligence where it adds value</h3><p>AI handles changing information, ambiguity, and recoverable exceptions within the relevant part of the workflow.</p></div></article>
-          <article class="how-step"><span class="how-number">04</span><div><h3>Verify, record, and continue</h3><p>Telic checks meaningful outcomes, records what happened, and asks for human guidance when safe continuation is uncertain.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="cta-panel shell"><div><h2>See how Telic could work in your operation.</h2><p>Bring us one workflow—well-defined or still messy. We’ll discuss where automation can create value and what a sensible first deployment could look like.</p></div><div class="cta-actions"><a class="button button-coral" href="contact.html#demo">Book a demo <span>↗</span></a></div></div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-mark"></span>telic</a><p class="footer-description">Automation for business workflows with a repeatable core and real-world variation.</p></div><div class="footer-columns"><div class="footer-column"><strong>Platform</strong><a href="how-it-works.html">How it works</a></div><div class="footer-column"><strong>Solutions</strong><a href="solution-bpo.html">BPOs</a><a href="solution-enterprise-gcc.html">Enterprise operations &amp; GCCs</a><a href="solution-agencies.html">Automation agencies &amp; RPA consultancies</a></div><div class="footer-column"><strong>Connect</strong><a href="contact.html">Contact</a><a href="contact.html#demo">Book a demo</a></div></div></div><div class="footer-bottom"><span>© 2026 Telic</span><span>Built for real-world operations.</span></div></div></footer>
-  <script src="site.js?v=9"></script>
+<script src="main.js"></script>
 </body>
 </html>
